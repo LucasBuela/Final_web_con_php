@@ -15,54 +15,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body class="blackground">
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark background">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../img/banner_more/cineOnline.png" alt="Logo" width="98" height="28">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Cartelera</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="clasic.html">Clasicos<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="funcion.html">Mi Funcion</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+<?php
+    require "header.php";
+  ?>
   <div class="container">
     <div class="row center">
       <div class="col-12">
         <h1 class="tittle">Clásicos</h1>
-
         <p class="info">Disfruta de mirar los mejores clásicos del cine cuando quieras.</p>
       </div>
-
     </div>
     <!-- row=fila que tiene 12 columnas por defecto -->
     <section class="row center">
       <!-- col=row(osea empieza por tomar el total de las 12 columnas)+colu-sm6(el segundo row , los cada elemento va a ocupar 6 columnas ,seria en tablet,
              y lg(monitor) va a tomar el defecto row, es decir las 12 columnas) -->
       <article class="col col-sm-6 col-md-4 col-lg">
-        <a href="clock.html"><img class="movie-img" src="../img/movies/clockwork.jpg" alt="A CLOCKWORK ORANGE"
+        <a href="clock.html"><img class="movie-img" src="img/movies/clockwork.jpg" alt="A CLOCKWORK ORANGE"
             width="200" height="285">
           <p class="movie-tittle"> A CLOCKWORK ORANGE </p>
         </a>
@@ -90,7 +62,7 @@
         </p>
       </article>
       <article class="col  col-sm-6 col-md-4 col-lg">
-        <a href="star.html"><img class="movie-img" src="../img/movies/star_wars.jpg"
+        <a href="star.html"><img class="movie-img" src="img/movies/star_wars.jpg"
             alt="STAR WARS: RETURN OF THE JEDI EPISODE VI" width="200" height="285">
           <p class="movie-tittle"> STAR WARS: RETURN OF THE JEDI EPISODE VI </p>
         </a>
@@ -117,7 +89,7 @@
         </p>
       </article>
       <article class="col col-sm-6 col-md-4 col-lg">
-        <a href="thing.html"><img class="movie-img" src="../img/movies/the_thing.jpg" alt="THE THING" width="200"
+        <a href="thing.html"><img class="movie-img" src="img/movies/the_thing.jpg" alt="THE THING" width="200"
             height="285">
           <p class="movie-tittle"> THE THING </p>
         </a>
@@ -145,7 +117,7 @@
         </p>
       </article>
       <article class="col col-sm-6 col-md-4 col-lg">
-        <a href="night.html"><img class="movie-img" src="../img/movies/tnotld.jpg" alt="NIGHT OF THE LIVING DEAD"
+        <a href="night.html"><img class="movie-img" src="img/movies/tnotld.jpg" alt="NIGHT OF THE LIVING DEAD"
             width="200" height="285">
           <p class="movie-tittle"> NIGHT OF THE LIVING DEAD </p>
         </a>
@@ -171,7 +143,7 @@
         </p>
       </article>
       <article class="col col-sm-6 col-md-4 col-lg">
-        <a href="child.html"><img class="movie-img" src="../img/movies/childs_play.jpg" alt="CHILD´S PLAY" width="200"
+        <a href="child.html"><img class="movie-img" src="img/movies/childs_play.jpg" alt="CHILD´S PLAY" width="200"
             height="285">
           <p class="movie-tittle"> CHILD´S PLAY </p>
         </a>
@@ -199,7 +171,7 @@
       </article>
       <article class="col col-sm-6 col-md-4 col-lg">
         <a href="scarface.html">
-          <img class="movie-img" src="../img/movies/scarface.jpg" alt="SCARFACE" width="200" height="285">
+          <img class="movie-img" src="img/movies/scarface.jpg" alt="SCARFACE" width="200" height="285">
           <p class="movie-tittle"> SCARFACE </p>
         </a>
         <p class="col-col d-lg-none info2"><span>Tony Montana es un emigrante cubano frío e implacable que se instala en
@@ -226,7 +198,7 @@
       </article>
       <article class="col col-sm-6 col-md-4 col-lg">
         <a href="taxi.html">
-          <img class="movie-img" src="../img/movies/taxi_driver.jpg" alt="TAXI DRIVER" width="200" height="285">
+          <img class="movie-img" src="img/movies/taxi_driver.jpg" alt="TAXI DRIVER" width="200" height="285">
           <p class="movie-tittle"> TAXI DRIVER </p>
         </a>
         <p class="col-col d-lg-none info2"><span>Ambientada en la Nueva York de la década de 1970, poco después de que
@@ -253,7 +225,7 @@
       </article>
       <article class="col col-sm-6 col-md-4 col-lg ">
         <a href="shinning.html">
-          <img class="movie-img" src="../img/movies/the_shinning.jpg" alt="THE SHINING" width="200" height="285">
+          <img class="movie-img" src="img/movies/the_shinning.jpg" alt="THE SHINING" width="200" height="285">
           <p class="movie-tittle"> THE SHINING </p>
         </a>
         <p class="col-col d-lg-none info2"><span>Jack Torrance(Jack Nicholson) se traslada junto a su mujer y a su
@@ -281,34 +253,9 @@
     </section>
   </div>
   <!--Footer-->
-  <footer class="background bg-dark bottom">
-    <div class="container">
-      <div class="row center">
-        <div class="col-8 col-md-9 col-lg-10 footer">
-          <p>Todos los derechos reservados CineOnline.com.ar</p>
-        </div>
-        <div class="col-4 col-md-3 col-lg-2 social-media">
-          <a href="https://www.facebook.com/" target="_blank">
-            <img src="
-                    ../img/banner_more/facebook.png" alt="facebook-icon" class="social-media" width="512" height="512">
-          </a>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img src="
-                    ../img/banner_more/instagram.png" alt="instagram-icon" class="social-media" width="512"
-              height="512">
-          </a>
-          <a href="https://www.youtube.com/" target="_blank">
-            <img src="
-                    ../img/banner_more/youtube.png" alt="youtube-icon" class="social-media" width="512" height="512">
-          </a>
-          <a href="https://twitter.com/" target="_blank">
-            <img src="
-                    ../img/banner_more/twitter.png" alt="twitter-icon" class="social-media" width="512" height="512">
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <?php
+    require "footer.php";
+  ?>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
