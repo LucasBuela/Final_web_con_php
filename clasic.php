@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +16,6 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
-
 <body class="blackground">
 <?php
     require "header.php";
@@ -34,7 +32,7 @@
       <!-- col=row(osea empieza por tomar el total de las 12 columnas)+colu-sm6(el segundo row , los cada elemento va a ocupar 6 columnas ,seria en tablet,
              y lg(monitor) va a tomar el defecto row, es decir las 12 columnas) -->
       <article class="col col-sm-6 col-md-4 col-lg">
-        <a href="clock.html"><img class="movie-img" src="img/movies/clockwork.jpg" alt="A CLOCKWORK ORANGE"
+        <a href="clock.php"><img class="movie-img" src="img/movies/clockwork.jpg" alt="A CLOCKWORK ORANGE"
             width="200" height="285">
           <p class="movie-tittle"> A CLOCKWORK ORANGE </p>
         </a>
@@ -62,7 +60,7 @@
         </p>
       </article>
       <article class="col  col-sm-6 col-md-4 col-lg">
-        <a href="star.html"><img class="movie-img" src="img/movies/star_wars.jpg"
+        <a href="star.php"><img class="movie-img" src="img/movies/star_wars.jpg"
             alt="STAR WARS: RETURN OF THE JEDI EPISODE VI" width="200" height="285">
           <p class="movie-tittle"> STAR WARS: RETURN OF THE JEDI EPISODE VI </p>
         </a>
@@ -89,7 +87,7 @@
         </p>
       </article>
       <article class="col col-sm-6 col-md-4 col-lg">
-        <a href="thing.html"><img class="movie-img" src="img/movies/the_thing.jpg" alt="THE THING" width="200"
+        <a href="thing.php"><img class="movie-img" src="img/movies/the_thing.jpg" alt="THE THING" width="200"
             height="285">
           <p class="movie-tittle"> THE THING </p>
         </a>
@@ -117,7 +115,7 @@
         </p>
       </article>
       <article class="col col-sm-6 col-md-4 col-lg">
-        <a href="night.html"><img class="movie-img" src="img/movies/tnotld.jpg" alt="NIGHT OF THE LIVING DEAD"
+        <a href="night.php"><img class="movie-img" src="img/movies/tnotld.jpg" alt="NIGHT OF THE LIVING DEAD"
             width="200" height="285">
           <p class="movie-tittle"> NIGHT OF THE LIVING DEAD </p>
         </a>
@@ -143,7 +141,7 @@
         </p>
       </article>
       <article class="col col-sm-6 col-md-4 col-lg">
-        <a href="child.html"><img class="movie-img" src="img/movies/childs_play.jpg" alt="CHILD´S PLAY" width="200"
+        <a href="child.php"><img class="movie-img" src="img/movies/childs_play.jpg" alt="CHILD´S PLAY" width="200"
             height="285">
           <p class="movie-tittle"> CHILD´S PLAY </p>
         </a>
@@ -170,7 +168,7 @@
         </p>
       </article>
       <article class="col col-sm-6 col-md-4 col-lg">
-        <a href="scarface.html">
+        <a href="scarface.php">
           <img class="movie-img" src="img/movies/scarface.jpg" alt="SCARFACE" width="200" height="285">
           <p class="movie-tittle"> SCARFACE </p>
         </a>
@@ -197,7 +195,7 @@
         </p>
       </article>
       <article class="col col-sm-6 col-md-4 col-lg">
-        <a href="taxi.html">
+        <a href="taxi.php">
           <img class="movie-img" src="img/movies/taxi_driver.jpg" alt="TAXI DRIVER" width="200" height="285">
           <p class="movie-tittle"> TAXI DRIVER </p>
         </a>
@@ -224,7 +222,7 @@
         </p>
       </article>
       <article class="col col-sm-6 col-md-4 col-lg ">
-        <a href="shinning.html">
+        <a href="shinning.php">
           <img class="movie-img" src="img/movies/the_shinning.jpg" alt="THE SHINING" width="200" height="285">
           <p class="movie-tittle"> THE SHINING </p>
         </a>
@@ -266,5 +264,4 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 </body>
-
 </html>

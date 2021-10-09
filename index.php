@@ -17,7 +17,6 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
-
 <body class="blackground">
   <!-- PHP  Header-->
  <?php

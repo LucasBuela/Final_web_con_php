@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,39 +14,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
-
 <body class="blackground padding">
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark background">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../img/banner_more/cineOnline.png" alt="Logo" width="98" height="28">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Cartelera</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="clasic.html">Clasicos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="funcion.html">Mi Funcion</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="contact.html">Contacto<span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+<?php
+    require "header.php";
+  ?>
   <div class="container">
     <div class="row center">
       <div class="col-12">
@@ -74,26 +46,26 @@
           <div class="cinema">
             <a class="movie-theater"
               href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419"
-              target="_blank"><img class="location" src="../img/banner_more/locator-map.svg"
+              target="_blank"><img class="location" src="img/banner_more/locator-map.svg"
                 alt="Multiplex Adress">Multiplex Lavalles</a>
           </div>
           <div class="cinema">
             <a class="movie-theater"
               href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419"
-              target="_blank"><img class="location" src="../img/banner_more/locator-map.svg"
+              target="_blank"><img class="location" src="img/banner_more/locator-map.svg"
                 alt="Multiplex Adress">Multiplex Belgrano</a>
           </div>
           <div class="cinema">
             <a class="movie-theater"
               href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419"
-              target="_blank"><img class="location" src="../img/banner_more/locator-map.svg"
+              target="_blank"><img class="location" src="img/banner_more/locator-map.svg"
                 alt="Multiplex Adress">Multiplex
               Arte</a>
           </div>
           <div class="cinema">
             <a class="movie-theater"
               href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419"
-              target="_blank"><img class="location" src="../img/banner_more/locator-map.svg"
+              target="_blank"><img class="location" src="img/banner_more/locator-map.svg"
                 alt="Multiplex Adress">Multiplex Palmas</a>
           </div>
         </div>
@@ -101,36 +73,9 @@
     </div>
   </div>
   <!--Footer-->
-
-  <footer class="background bg-dark fixed-bottom">
-    <div class="container">
-      <div class="row center">
-        <div class="col-8 col-md-9 col-lg-10 footer">
-          <p>Todos los derechos reservados CineOnline.com.ar</p>
-        </div>
-        <div class="col-4 col-md-3 col-lg-2 social-media">
-          <a href="https://www.facebook.com/" target="_blank">
-            <img src="
-                    ../img/banner_more/facebook.png" alt="facebook-icon" class="social-media" width="512" height="512">
-          </a>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img src="
-                    ../img/banner_more/instagram.png" alt="instagram-icon" class="social-media" width="512"
-              height="512">
-          </a>
-          <a href="https://www.youtube.com/" target="_blank">
-            <img src="
-                    ../img/banner_more/youtube.png" alt="youtube-icon" class="social-media" width="512" height="512">
-          </a>
-          <a href="https://twitter.com/" target="_blank">
-            <img src="
-                    ../img/banner_more/twitter.png" alt="twitter-icon" class="social-media" width="512" height="512">
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
+  <?php
+    require "footer.php";
+  ?>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
