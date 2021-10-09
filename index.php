@@ -68,7 +68,7 @@
     <!--Cartelera-->
     <section class="row center">
       <article class="col col-sm-6 col-lg ">
-        <a href="html/cruella.html" target="_blank"><img src="img/movies/cruella.jpg" alt="Cruella" class="movie-img"
+        <a href="cruella.php" target="_blank"><img src="img/movies/cruella.jpg" alt="Cruella" class="movie-img"
             width="200" height="285">
           <h1 class="movie-tittle col-12"> Cruella </h1>
         </a>
@@ -96,7 +96,7 @@
         </p>
       </article>
       <article class="col col-sm-6 col-lg">
-        <a href="html/mortal.html" target="_blank"><img src="img/movies/mortal_kombat.jpg" alt="Mortal Kombat"
+        <a href="mortal.php" target="_blank"><img src="img/movies/mortal_kombat.jpg" alt="Mortal Kombat"
             class="movie-img" width="200" height="285">
           <h2 class="movie-tittle col-12"> Mortal Kombat </h2>
         </a>
@@ -124,7 +124,7 @@
         </p>
       </article>
       <article class="col col-sm-6 col-lg">
-        <a href="html/raya.html" target="_blank"><img src="img/movies/raya_and_the_last_dragon.jpg"
+        <a href="raya.php" target="_blank"><img src="img/movies/raya_and_the_last_dragon.jpg"
             alt="raya y el último dragon" class="movie-img" width="200" height="285">
           <h3 class="movie-tittle col-12"> Raya y el Último Dragón </h3>
         </a>
@@ -152,7 +152,7 @@
         </p>
       </article>
       <article class="col col-sm-6 col-lg">
-        <a href="html/conjuring.html" target="_blank"><img src="img/movies/the_conjuring.jpg" alt="el conjuro"
+        <a href="conjuring.php" target="_blank"><img src="img/movies/the_conjuring.jpg" alt="el conjuro"
             class="movie-img" width="200" height="285">
           <h4 class="movie-tittle  col-12"> El conjuro 3 </h4>
         </a>
