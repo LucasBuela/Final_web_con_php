@@ -37,9 +37,9 @@
       <div class="col-12 col-sm-12 col-md-12 col-lg-12">
         <h2 class="tittle">Sinopsis</h2>
         <p class="info2"><span>Cole Young, el luchador de MMA, acostumbrado a recibir palizas por dinero, desconoce su
-            ascendencia, y tampoco sabe por qué el emperador Shang Tsung de Outworld ha enviado a su mejor guerrero,
-            Sub-Zero, un Cryomancer sobrenatural, para dar caza a Cole. Ante esta situación, Cole teme por la seguridad
-            de su familia y busca a Sonya Blade siguiendo las indicaciones de Jax, un comandante de las Fuerzas
+            ascendencia, y tasobrenatural, para dar caza a Cole. Ante esta situación, Cole teme por la seguridad
+            de su familia y bmpoco sabe por qué el emperador Shang Tsung de Outworld ha enviado a su mejor guerrero,
+            Sub-Zero, un Cryomancer usca a Sonya Blade siguiendo las indicaciones de Jax, un comandante de las Fuerzas
             Especiales que tiene la misma extraña marca de dragón con la que nació Cole.
           </span>
         </p>

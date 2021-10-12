@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -67,115 +66,58 @@
     </div>
     <!--Cartelera-->
     <section class="row center">
-      <article class="col col-sm-6 col-lg ">
-        <a href="cruella.php" target="_blank"><img src="img/movies/cruella.jpg" alt="Cruella" class="movie-img"
-            width="200" height="285">
-          <h1 class="movie-tittle col-12"> Cruella </h1>
-        </a>
-        <p class="col-col d-lg-none info2"><span>Decidida a convertirse en una exitosa diseñadora de moda, una joven y
-            creativa estafadora llamada Estella se asocia con un par de ladrones para sobrevivir en las calles de
-            Londres. Sin embargo, cuando su talento para la moda llama la atención de la legendaria diseñadora, la
-            Baronesa von Hellman, Estella cambia el rumbo de su vida hasta que una serie de acontecimientos la llevan a
-            asumir su lado malvado y a convertirse en la estridente y vengativa Cruella.
-          </span>
-        </p>
-        <p class="col-col d-lg-none info2">
-          <span>
-            REPARTO: Emma Stone, Emma Thompson, John McCrea.
-          </span>
-        </p>
-        <p class="col-col d-lg-none info2">
-          <span>
-            DIRECCIÓN: Craig Gillespie.
-          </span>
-        </p>
-        <p class="col-col d-lg-none info2">
-          <span>
-            Drama - 2021 - 1h 34min.
-          </span>
-        </p>
-      </article>
-      <article class="col col-sm-6 col-lg">
-        <a href="mortal.php" target="_blank"><img src="img/movies/mortal_kombat.jpg" alt="Mortal Kombat"
-            class="movie-img" width="200" height="285">
-          <h2 class="movie-tittle col-12"> Mortal Kombat </h2>
-        </a>
-        <p class="col-col d-lg-none info2"><span>Cole Young, el luchador de MMA, acostumbrado a recibir palizas por
-            dinero, desconoce su ascendencia, y tampoco sabe por qué el emperador Shang Tsung de Outworld ha enviado a
-            su mejor guerrero, Sub-Zero, un Cryomancer sobrenatural, para dar caza a Cole. Ante esta situación, Cole
-            teme por la seguridad de su familia y busca a Sonya Blade siguiendo las indicaciones de Jax, un comandante
-            de las Fuerzas Especiales que tiene la misma extraña marca de dragón con la que nació Cole.
-          </span>
-        </p>
-        <p class="col-col d-lg-none info2">
-          <span>
-            REPARTO: Lewis Tan, Jessica McNamee, Josh Lawson.
-          </span>
-        </p>
-        <p class="col-col d-lg-none info2">
-          <span>
-            DIRECCIÓN: Simon McQuoid.
-          </span>
-        </p>
-        <p class="col-col d-lg-none info2">
-          <span>
-            Acción/Aventura - 2021 - 1h 10min.
-          </span>
-        </p>
-      </article>
-      <article class="col col-sm-6 col-lg">
-        <a href="raya.php" target="_blank"><img src="img/movies/raya_and_the_last_dragon.jpg"
-            alt="raya y el último dragon" class="movie-img" width="200" height="285">
-          <h3 class="movie-tittle col-12"> Raya y el Último Dragón </h3>
-        </a>
-        <p class="col-col d-lg-none info2"><span>En el fantástico mundo de Kumandra, humanos y dragones vivieron juntos
-            en perfecta armonía. Sin embargo, cuando unas fuerzas del mal amenazaron el territorio, los dragones se
-            sacrificaron para salvar a la humanidad. Cerca de 500 años después, esas mismas fuerzas malignas han
-            regresado y Raya, una guerrera solitaria, tendrá que encontrar al último y legendario dragón para
-            reconstruir un mundo destruido y volver a unir a su pueblo.
-          </span>
-        </p>
-        <p class="col-col d-lg-none info2">
-          <span>
-            REPARTO: Awkwafina, Kelly Marie Tran, Sandra Oh.
-          </span>
-        </p>
-        <p class="col-col d-lg-none info2">
-          <span>
-            DIRECCIÓN: Carlos López Estrada, Don Hall.
-          </span>
-        </p>
-        <p class="col-col d-lg-none info2">
-          <span>
-            Aventura - 2021 - 1h 14min.
-          </span>
-        </p>
-      </article>
-      <article class="col col-sm-6 col-lg">
-        <a href="conjuring.php" target="_blank"><img src="img/movies/the_conjuring.jpg" alt="el conjuro"
-            class="movie-img" width="200" height="285">
-          <h4 class="movie-tittle  col-12"> El conjuro 3 </h4>
-        </a>
-        <p class="col-col d-lg-none info2"><span>Años 80. Ed y Lorraine Warren se enfrentan a un nuevo caso de la mano
-            de un hombre, Arne Cheyne Johnson, acusado de un terrible asesinato tras haber sido poseído por un demonio.
-          </span>
-        </p>
-        <p class="col-col d-lg-none info2">
-          <span>
-            REPARTO: Vera Farmiga, Patrick Wilson, Ruairi O'Connor.
-          </span>
-        </p>
-        <p class="col-col d-lg-none info2">
-          <span>
-            DIRECCIÓN: Michael Chaves.
-          </span>
-        </p>
-        <p class="col-col d-lg-none info2">
-          <span>
-            Terror - 2021 - 1h 12min.
-          </span>
-        </p>
-      </article>
+    <?php
+      $arr_imagenes=["img/movies/cruella.jpg","img/movies/mortal_kombat.jpg","img/movies/raya_and_the_last_dragon.jpg","img/movies/the_conjuring.jpg"];
+      $arr_titulos=["Cruella 2021","Mortal Kombat","Raya y el Último Dragón","El conjuro 3"];
+      $arr_sinopsis=["Decidida a convertirse en una exitosa diseñadora de moda, una joven y
+      creativa estafadora llamada Estella se asocia con un par de ladrones para sobrevivir en las calles de
+      Londres. Sin embargo, cuando su talento para la moda llama la atención de la legendaria diseñadora, la
+      Baronesa von Hellman, Estella cambia el rumbo de su vida hasta que una serie de acontecimientos la llevan a
+      asumir su lado malvado y a convertirse en la estridente y vengativa Cruella.","Cole Young, el luchador de MMA, acostumbrado a recibir palizas por
+      dinero, desconoce su ascendencia, y tampoco sabe por qué el emperador Shang Tsung de Outworld ha enviado a
+      su mejor guerrero, Sub-Zero, un Cryomancer sobrenatural, para dar caza a Cole. Ante esta situación, Cole
+      teme por la seguridad de su familia y busca a Sonya Blade siguiendo las indicaciones de Jax, un comandante
+      de las Fuerzas Especiales que tiene la misma extraña marca de dragón con la que nació Cole","En el fantástico mundo de Kumandra, humanos y dragones vivieron juntos
+      en perfecta armonía. Sin embargo, cuando unas fuerzas del mal amenazaron el territorio, los dragones se
+      sacrificaron para salvar a la humanidad. Cerca de 500 años después, esas mismas fuerzas malignas han
+      regresado y Raya, una guerrera solitaria, tendrá que encontrar al último y legendario dragón para
+      reconstruir un mundo destruido y volver a unir a su pueblo.","Años 80. Ed y Lorraine Warren se enfrentan a un nuevo caso de la mano
+      de un hombre, Arne Cheyne Johnson, acusado de un terrible asesinato tras haber sido poseído por un demonio."];
+      $arr_reparto=["REPARTO: Emma Stone, Emma Thompson, John McCrea.","REPARTO: Lewis Tan, Jessica McNamee, Josh Lawson."," REPARTO: Awkwafina, Kelly Marie Tran, Sandra Oh.","REPARTO: Vera Farmiga, Patrick Wilson, Ruairi O'Connor."];
+      $arr_direccion=["DIRECCIÓN: Craig Gillespie.","DIRECCIÓN: Simon McQuoid.","DIRECCIÓN: Carlos López Estrada, Don Hall.","DIRECCIÓN: Michael Chaves."];
+      $arr_año=["Drama - 2021 - 1h 34min.","Acción/Aventura - 2021 - 1h 10min.","Aventura - 2021 - 1h 14min.","Terror - 2021 - 1h 12min."];
+
+      for($i=0; $i<4; $i++){
+       $articulos ='
+       <article class="col col-sm-6 col-lg ">
+         <a href="cruella.php" target="_blank"><img src='.$arr_imagenes[$i].' alt="Cruella" class="movie-img"
+             width="200" height="285">
+           <h1 class="movie-tittle col-12"> '.$arr_titulos[$i].' </h1>
+         </a>
+         <p class="col-col d-lg-none info2"><span>
+         '.$arr_sinopsis[$i].'
+           </span>
+         </p>
+         <p class="col-col d-lg-none info2">
+           <span>
+          '.$arr_reparto[$i].'
+           </span>
+         </p>
+         <p class="col-col d-lg-none info2">
+           <span>
+          '.$arr_direccion[$i].'   
+           </span>
+         </p>
+         <p class="col-col d-lg-none info2">
+           <span>
+           '.$arr_año[$i].'   
+           </span>
+         </p>
+       </article>
+       ';
+       echo $articulos;
+      }
+    ?>
     </section>
   </div>
   <!--PHP Footer-->
