@@ -14,16 +14,16 @@ $txt_header='
      <div class="collapse navbar-collapse" id="navbarText">
        <ul class="navbar-nav ml-auto">
          <li class="nav-item active">
-           <a class="nav-link" href="index.php">Cartelera php<span class="sr-only">(current)</span></a>
+           <a class="nav-link" href="index.php">Cartelera<span class="sr-only">(current)</span></a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="clasic.php">Clasicos php</a>
+           <a class="nav-link" href="clasic.php">Clasicos</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="funcion.php">Mi Funcion php</a>
+           <a class="nav-link" href="funcion.php">Mi Funcion</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="contact.php">Contacto php</a>
+           <a class="nav-link" href="contact.php">Contacto</a>
          </li>
        </ul>
      </div>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,35 +23,52 @@
   ?>
   <div class="container">
     <div class="row center">
-      <div class=" col-12">
-        <h1 class="tittle">Child´s Play</h1>
-      </div>
+      <?php
+      $titulo="Child´s Play";
+      $sinopsis="Después de mudarse a una ciudad nueva, Karen le regala a su hijo Andy un muñeco que se
+      convierte en el mejor amigo del niño. Lo que ellos desconocían es que el muñeco es un ser maligno que tiene
+      vida propia. Andy deberá aliarse con otros niños vecinos para detener a esta diabólica criatura que está
+      provocando muertes en la ciudad.";
+      $reparto="REPARTO: Devon Sawa, Zackary Arthur, Alyvia Alyn Lind.";
+      $direccion="DIRECCIÓN: Don Mancini.";
+      $año="Terror - 1988 - 1h 27 min.";
+
+      $pelicula='<div class=" col-12">
+      <h1 class="tittle">'.$titulo.'</h1>
     </div>
-    <div class="row center">
-      <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BhU0cCXYqw0" title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-        <h2 class="tittle">Sinopsis</h2>
-        <p class="info2"><span>Después de mudarse a una ciudad nueva, Karen le regala a su hijo Andy un muñeco que se
-            convierte en el mejor amigo del niño. Lo que ellos desconocían es que el muñeco es un ser maligno que tiene
-            vida propia. Andy deberá aliarse con otros niños vecinos para detener a esta diabólica criatura que está
-            provocando muertes en la ciudad.
-          </span>
-        </p>
-        <p class="info2"><span>REPARTO: Devon Sawa, Zackary Arthur, Alyvia Alyn Lind.
-          </span>
-        </p>
-        <p class="info2"><span>
-            DIRECCIÓN: Don Mancini.
-          </span>
-        </p>
-        <p class="info2"><span>Terror - 1988 - 1h 27 min.
-          </span>
-        </p>
-      </div>
+  </div>
+  <div class="row center">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/BhU0cCXYqw0" title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <h2 class="tittle">Sinopsis</h2>
+      <p class="info2"><span>
+      '.$sinopsis.'
+        </span>
+      </p>
+      <p class="info2">
+      <span>
+      '.$reparto.'
+        </span>
+      </p>
+      <p class="info2">
+      <span>
+      '.$direccion.'    
+        </span>
+      </p>
+      <p class="info2">
+      <span>
+      '.$año.'
+        </span>
+      </p>
+    </div>';
+      echo $pelicula;
+
+      ?>
+     
     </div>
   </div>
   <!--Footer-->
