@@ -21,6 +21,29 @@
  <?php
     require "header.php";
  ?>
+  <!-- <?php
+      //     $array_banner=array(
+      //       array("img"=>"img/banner_more/banner1.jpg","banner"=>"banner 1"),
+            
+      //     );
+        
+      //       foreach($array_banner as $banners){
+      //     echo '<div class="carousel-inner banner">
+      //   <div class="carousel-item active">
+      //     <img src='.$banners["img"].'alt="banner 1" width="1920" height="1080">
+      //   </div>
+      // </div>
+      // <!-- Flechas -->
+      // <a class="carousel-control-prev" href="#miCarousel" data-slide="prev">
+      //   <span class="carousel-control-prev-icon"></span>
+      // </a>
+      // <a class="carousel-control-next" href="#miCarousel" data-slide="next">
+      //   <span class="carousel-control-next-icon"></span>
+      // </a>
+      // </div>';
+            // }
+
+          ?> -->
   <div class="container">
     <!--Imagenes Carousel-->
     <div id="miCarousel" class="carousel slide" data-ride="carousel" data-interval="2300">
@@ -67,57 +90,80 @@
     <!--Cartelera-->
     <section class="row center">
     <?php
-      $arr_imagenes=["img/movies/cruella.jpg","img/movies/mortal_kombat.jpg","img/movies/raya_and_the_last_dragon.jpg","img/movies/the_conjuring.jpg"];
-      $arr_titulos=["Cruella 2021","Mortal Kombat","Raya y el Último Dragón","El conjuro 3"];
-      $arr_sinopsis=["Decidida a convertirse en una exitosa diseñadora de moda, una joven y
-      creativa estafadora llamada Estella se asocia con un par de ladrones para sobrevivir en las calles de
-      Londres. Sin embargo, cuando su talento para la moda llama la atención de la legendaria diseñadora, la
-      Baronesa von Hellman, Estella cambia el rumbo de su vida hasta que una serie de acontecimientos la llevan a
-      asumir su lado malvado y a convertirse en la estridente y vengativa Cruella.","Cole Young, el luchador de MMA, acostumbrado a recibir palizas por
-      dinero, desconoce su ascendencia, y tampoco sabe por qué el emperador Shang Tsung de Outworld ha enviado a
-      su mejor guerrero, Sub-Zero, un Cryomancer sobrenatural, para dar caza a Cole. Ante esta situación, Cole
-      teme por la seguridad de su familia y busca a Sonya Blade siguiendo las indicaciones de Jax, un comandante
-      de las Fuerzas Especiales que tiene la misma extraña marca de dragón con la que nació Cole","En el fantástico mundo de Kumandra, humanos y dragones vivieron juntos
-      en perfecta armonía. Sin embargo, cuando unas fuerzas del mal amenazaron el territorio, los dragones se
-      sacrificaron para salvar a la humanidad. Cerca de 500 años después, esas mismas fuerzas malignas han
-      regresado y Raya, una guerrera solitaria, tendrá que encontrar al último y legendario dragón para
-      reconstruir un mundo destruido y volver a unir a su pueblo.","Años 80. Ed y Lorraine Warren se enfrentan a un nuevo caso de la mano
-      de un hombre, Arne Cheyne Johnson, acusado de un terrible asesinato tras haber sido poseído por un demonio."];
-      $arr_reparto=["REPARTO: Emma Stone, Emma Thompson, John McCrea.","REPARTO: Lewis Tan, Jessica McNamee, Josh Lawson."," REPARTO: Awkwafina, Kelly Marie Tran, Sandra Oh.","REPARTO: Vera Farmiga, Patrick Wilson, Ruairi O'Connor."];
-      $arr_direccion=["DIRECCIÓN: Craig Gillespie.","DIRECCIÓN: Simon McQuoid.","DIRECCIÓN: Carlos López Estrada, Don Hall.","DIRECCIÓN: Michael Chaves."];
-      $arr_año=["Drama - 2021 - 1h 34min.","Acción/Aventura - 2021 - 1h 10min.","Aventura - 2021 - 1h 14min.","Terror - 2021 - 1h 12min."];
+      $index_array=array(
+      array("img"=>"img/movies/cruella.jpg",
+        "tittle"=>"Cruella 2021",
+        "review"=>"Decidida a convertirse en una exitosa diseñadora de moda, una joven y
+        creativa estafadora llamada Estella se asocia con un par de ladrones para sobrevivir en las calles de
+        Londres. Sin embargo, cuando su talento para la moda llama la atención de la legendaria diseñadora, la
+        Baronesa von Hellman, Estella cambia el rumbo de su vida hasta que una serie de acontecimientos la llevan a
+        asumir su lado malvado y a convertirse en la estridente y vengativa Cruella.",
+        "cast"=>"REPARTO: Emma Stone, Emma Thompson, John McCrea.",
+        "direction"=>"DIRECCIÓN: Craig Gillespie.",
+        "year"=>"Drama - 2021 - 1h 34min."),
 
-      for($i=0; $i<4; $i++){
-       $articulos ='
-       <article class="col col-sm-6 col-lg ">
-         <a href="cruella.php" target="_blank"><img src='.$arr_imagenes[$i].' alt="Cruella" class="movie-img"
+        array("img"=>"img/movies/mortal_kombat.jpg",
+        "tittle"=>"Mortal Kombat",
+        "review"=>"Cole Young, el luchador de MMA, acostumbrado a recibir palizas por
+        dinero, desconoce su ascendencia, y tampoco sabe por qué el emperador Shang Tsung de Outworld ha enviado a
+        su mejor guerrero, Sub-Zero, un Cryomancer sobrenatural, para dar caza a Cole. Ante esta situación, Cole
+        teme por la seguridad de su familia y busca a Sonya Blade siguiendo las indicaciones de Jax, un comandante
+        de las Fuerzas Especiales que tiene la misma extraña marca de dragón con la que nació Cole",
+        "cast"=>"REPARTO: Lewis Tan, Jessica McNamee, Josh Lawson.",
+        "direction"=>"DIRECCIÓN: Simon McQuoid.",
+        "year"=>"Acción/Aventura - 2021 - 1h 10min."),
+
+        array("img"=>"img/movies/raya_and_the_last_dragon.jpg",
+        "tittle"=>"Raya y el Último Dragón",
+        "review"=>"En el fantástico mundo de Kumandra, humanos y dragones vivieron juntos
+        en perfecta armonía. Sin embargo, cuando unas fuerzas del mal amenazaron el territorio, los dragones se
+        sacrificaron para salvar a la humanidad. Cerca de 500 años después, esas mismas fuerzas malignas han
+        regresado y Raya, una guerrera solitaria, tendrá que encontrar al último y legendario dragón para
+        reconstruir un mundo destruido y volver a unir a su pueblo.",
+        "cast"=>"REPARTO: Awkwafina, Kelly Marie Tran, Sandra Oh.",
+        "direction"=>"DIRECCIÓN: Carlos López Estrada, Don Hall.",
+        "year"=>"Aventura - 2021 - 1h 14min."),
+
+        array("img"=>"img/movies/the_conjuring.jpg",
+        "tittle"=>"El conjuro 3",
+        "review"=>"Años 80. Ed y Lorraine Warren se enfrentan a un nuevo caso de la mano
+        de un hombre, Arne Cheyne Johnson, acusado de un terrible asesinato tras haber sido poseído por un demonio.",
+        "cast"=>"REPARTO: Vera Farmiga, Patrick Wilson, Ruairi O'Connor.",
+        "direction"=>"DIRECCIÓN: Michael Chaves.",
+        "year"=>"Terror - 2021 - 1h 12min."),
+
+      );
+
+      foreach($index_array as $movies){
+       
+       echo '<article class="col col-sm-6 col-lg ">
+         <a href="cruella.php" target="_blank"><img src='.$movies["img"].' alt="Cruella" class="movie-img"
              width="200" height="285">
-           <h1 class="movie-tittle col-12"> '.$arr_titulos[$i].' </h1>
+           <h1 class="movie-tittle col-12"> '.$movies["tittle"].' </h1>
          </a>
          <p class="col-col d-lg-none info2"><span>
-         '.$arr_sinopsis[$i].'
+         '.$movies["review"].'
            </span>
          </p>
          <p class="col-col d-lg-none info2">
            <span>
-          '.$arr_reparto[$i].'
+          '.$movies["cast"].'
            </span>
          </p>
          <p class="col-col d-lg-none info2">
            <span>
-          '.$arr_direccion[$i].'   
+          '.$movies["direction"].'   
            </span>
          </p>
          <p class="col-col d-lg-none info2">
            <span>
-           '.$arr_año[$i].'   
+           '.$movies["year"].'   
            </span>
          </p>
-       </article>
-       ';
-       echo $articulos;
-      }
+       </article>';
+      }     
     ?>
+
     </section>
   </div>
   <!--PHP Footer-->
