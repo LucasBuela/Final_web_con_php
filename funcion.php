@@ -59,6 +59,7 @@
         </div>
       </div>
     </div>
+    <!-- Probar poniendo cada informacion,titulo, como si fueran articulos -->
     <section>
       <?php
         $tittle=array("¿Cómo funciona?","¿Cuáles son los pasos para ver una película?","Desde la compra", "¿cuántos días tengo para ver la película?","¿A dónde me contacto si tengo un problema con el código?");
@@ -73,11 +74,11 @@
         Ante cualquier inconveniente con tu compra, contactanos.");
         
         for($i=0; $i<=3; $i++){
-          echo '<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+          echo '<article class="col-12 col-sm-12 col-md-12 col-lg-12">
           <h2 class="tittle">'.$tittle[$i].'</h2>
           <p class="info2"><span>'.$informacion[$i].'</span>
           </p>
-          </div>';
+          </article>';
         }
     
         ?>  

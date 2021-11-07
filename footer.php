@@ -1,12 +1,11 @@
 <?php 
 
 $txt_foooter='
-
-<footer class="background bg-dark fixed-bottom">
+<footer class="background bg-dark">
 <div class="container">
   <div class="row center">
     <div class="col-8 col-md-9 col-lg-10 footer">
-      <p>Todos los derechos reservados CineOnline.com.ar</p>
+    <p>Todos los derechos reservados <a href="index.php" class="cineOnline">CineOnline.com.ar</a></p>
     </div>
     <div class="col-4 col-md-3 col-lg-2 social-media">
       <a href="https://www.facebook.com/" target="_blank">

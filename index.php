@@ -21,68 +21,72 @@
   <?php
   require "header.php";
   ?>
- 
+  
   <div class="container">
-    <!--Imagenes Carousel-->
-    <!-- <div id="miCarousel" class="carousel slide" data-ride="carousel" data-interval="2300"> -->
-      <!-- Imagenes-->
-      <?php
-            $array_banner=array(
-              array("img"=>"/img/banner_more/banner1.jpg","banner"=>"banner 1"),
-              array("img"=>"/img/banner_more/banner2.jpg","banner"=>"banner 2")
+    <?php
+        //     $array_banner=array(
+        //       array("img"=>"img/banner_more/banner1.jpg","banner"=>"banner 1"),
+        //       array("img"=>"img/banner_more/banner2.jpg","banner"=>"banner 2")
 
-            );
+        //     );
 
-              foreach($array_banner as $banners){
-            echo '<div id="miCarousel" class="carousel slide" data-ride="carousel" data-interval="2300">
-            <div class="carousel-inner banner">
-          <div class="carousel-item active">
-            <img src='.$banners["img"].'alt="banner 1" width="1920" height="1080">
-          </div>
-        </div>
-        <!-- Flechas -->
-        <a class="carousel-control-prev" href="#miCarousel" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#miCarousel" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
-        </div>
-        ';
-        }
+        //       foreach($array_banner as $banners){
+        //     echo '<div id="miCarousel" class="carousel slide" data-ride="carousel" data-interval="2300">
+        //     <div class="carousel-inner banner">
+        //   <div class="carousel-item active">
+        //     <img src='.$banners["img"].'alt='.$banners["banner"].' width="1920" height="1080">
+        //   </div>
+        // </div>
+        // <!-- Flechas -->
+        // <a class="carousel-control-prev" href="#miCarousel" data-slide="prev">
+        //   <span class="carousel-control-prev-icon"></span>
+        // </a>
+        // <a class="carousel-control-next" href="#miCarousel" data-slide="next">
+        //   <span class="carousel-control-next-icon"></span>
+        // </a>
+        // </div>
+        // ';
+        // }
 
         ?> 
-      
-      <!-- <div class="carousel-inner banner"> -->
-        <!-- <div class="carousel-item active">
-          <img src="img/banner_more/banner1.jpg" alt="banner 1" width="1920" height="1080">
-        </div>
-        <div class="carousel-item">
+    <!--Imagenes Carousel-->
+    <div id="miCarousel" class="carousel slide" data-ride="carousel" data-interval="2300">
+      <!-- Imagenes-->
+      <div class="carousel-inner banner">
+        <div class="carousel-item active">
           <img src="img/banner_more/banner2.jpg" alt="banner 2" width="1920" height="1080">
         </div>
-      </div> -->
+        <div class="carousel-item">
+          <img src="img/banner_more/banner1.jpg" alt="banner 1" width="1920" height="1080">
+        </div>
+      </div>
       <!-- Flechas -->
-      <!-- <a class="carousel-control-prev" href="#miCarousel" data-slide="prev">
+      <a class="carousel-control-prev" href="#miCarousel" data-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </a>
       <a class="carousel-control-next" href="#miCarousel" data-slide="next">
         <span class="carousel-control-next-icon"></span>
-      </a> -->
-    <!-- </div> -->
+      </a>
+    </div>
     <!--Buscador-->
     <div class="row center">
       <div class="col-6 col-sm-6 col-md-6 col-lg-3">
         <select name="select" id="buttom" class="buttom">
           <option value="select">Selecciona una Película</option>
           <option value="movie1">Cruella</option>
-          <option value="movie2">Raya y el último dragon</option>
+          <option value="movie2">Mortal Kombat</option>
+          <option value="movie2">Raya y el último Dragón</option>
+          <option value="movie2">El conjuro 3</option>
         </select>
       </div>
       <!--Buscador 2-->
       <div class="col-6 col-sm-6 6col-md-6 col-lg-3">
         <select name="select2" id="buttom2" class="buttom">
-          <option value="category">Selecciona Categoria</option>
-          <option value="category">Clásicos</option>
+          <option value="category">Selecciona una Categoria</option>
+          <option value="category">Terror</option>
+          <option value="category">Drama/Crimen</option>
+          <option value="category">Accion/Aventura</option>
+          <option value="category">Ciencia Ficción/Acción</option>
         </select>
       </div>
       <!--Lupa-->
@@ -153,8 +157,8 @@
 
         echo '<article class="col col-sm-6 col-lg ">
          <a href=' . $movies["link"] . ' target="_blank"><img src=' . $movies["img"] . ' alt="Cruella" class="movie-img"
-             width="200" height="285">
-           <h1 class="movie-tittle col-12"> ' . $movies["tittle"] . ' </h1>
+             width="200" height="285"><br>
+             <a class="movie-tittle col-12" href=' . $movies["link"] . '> ' . $movies["tittle"] . ' </a>  
          </a>
          <p class="col-col d-lg-none info2"><span>
          ' . $movies["review"] . '
@@ -176,7 +180,7 @@
            </span>
          </p>
        </article>';
-      }
+      };
       ?>
     </section>
   </div>
@@ -188,5 +192,4 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-
 </html>

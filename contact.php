@@ -27,6 +27,7 @@
         <p class="info">Si deseas contactarnos puedes hacerlo en este formulario o en las redes sociales.</p>
       </div>
     </div>
+    <section>
     <div class="row center">
       <div class="col-12 col-sm-12 col-md-12 col-lg-8 form">
         <form action="#" method="get">
@@ -42,12 +43,12 @@
         <iframe class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.7248819937686!2d-58.458479284237875!3d-34.56052056272199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d35b8bc4b1%3A0x9e4d4bbc42e0bee5!2sMultiplex%20Belgrano%201%2C%202%2C%203!5e0!3m2!1ses-419!2sar!4v1624844914737!5m2!1ses-419!2sar"
           width="100" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <div class="cinemas">
+          <div class="cinemas">
           <div class="cinema">
             <a class="movie-theater"
               href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419"
               target="_blank"><img class="location" src="img/banner_more/locator-map.svg"
-                alt="Multiplex Adress">Multiplex Lavalles</a>
+                alt="Multiplex Adress">Multiplex Lavalle</a>
           </div>
           <div class="cinema">
             <a class="movie-theater"
@@ -71,6 +72,7 @@
         </div>
       </div>
     </div>
+  </section>
   </div>
   <!--Footer-->
   <?php

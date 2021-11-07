@@ -1,6 +1,5 @@
 <?php 
 $txt_header='
-
 <header>
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark background">
    <div class="container">
@@ -25,6 +24,9 @@ $txt_header='
          <li class="nav-item">
            <a class="nav-link" href="contact.php">Contacto</a>
          </li>
+         <li class="nav-item">
+         <a class="nav-link" href="login.php">Login</a>
+       </li>
        </ul>
      </div>
    </div>
