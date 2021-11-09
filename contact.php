@@ -70,6 +70,10 @@
                 alt="Multiplex Adress">Multiplex Palmas</a>
           </div>
         </div>
+        <div>
+          <a href="/index.html">Crea una cuenta</a><br>
+          <a href="/index.html">¿Olvidaste tu contraseña?</a>
+        </div>
       </div>
     </div>
   </section>

@@ -153,6 +153,9 @@ section article a:hover{
     margin: 110px 100px;
     padding: 100px 100px;
 }
+.login-center{
+    justify-content: center;
+}
 #password{
     width: 50%;
     border-radius: 20px;

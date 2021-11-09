@@ -52,14 +52,29 @@
     </nav>
   </header>
   <section class="container login">
-    <div class="row center">
-      <div class="col-12 col-sm-12 col-md-12 col-lg-10 form">
-        <form action="#" method="get">
-          <label for="mail"></label>
-          <input type="email" id="mail" name="mail" required placeholder="E-mail" maxlength="20"><br>
+    <div class="row center login-center">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 form">
+        <form action="#" method="get" class="was-validated">
+          <div class="form-group">
+            <label for="uname"></label>
+            <input type="text" class="form-control" id="uname" placeholder="E-mail" name="uname" required>
+            <div class="valid-feedback">Valido.</div>
+            <div class="invalid-feedback">Por favor completar el campo.</div>
+          </div>
+          <div class="form-group">
+            <label for="pwd"></label>
+            <input type="password" class="form-control" id="pwd" placeholder="Contraseña" name="pswd" required>
+            <div class="valid-feedback">Valido.</div>
+            <div class="invalid-feedback">Por favor completar el campo.</div>
+          </div>
+          
+          <!-- <label for="mail"></label>
+          <input type="email" id="mail" name="mail" required placeholder="E-mail" maxlength="20" class="form-control"><br>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
           <label for="password"></label>
           <input type="password" id="password" name="password" required placeholder="Contraseña" maxlength="12"><br>
-          <input type="submit" name="submit" id="submit"><br>
+          <input type="submit" name="submit" id="submit"><br> -->
           <a href="index.html">Crea una cuenta</a><br>
           <a href="index.html">¿Olvidaste tu contraseña?</a>
         </form>
