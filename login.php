@@ -57,7 +57,7 @@
     ?>
     <section class="login">
       <div class="row center">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-8 form">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-10 form">
           <!-- <p><span class="error">* required field</span></p> -->
           <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
             <input type="text" class="form-control is-invalid" id="name" name="name" placeholder="Nombre" maxlength="15" required >

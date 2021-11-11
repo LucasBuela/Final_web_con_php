@@ -96,7 +96,7 @@
             <div class="invalid-feedback">
             <span class="error"> Please choose a name. <?php echo $nameErr; ?></span>
             <br><br>
-            <input type="email" class="form-control is-invalid" id="mail" name="mail" required placeholder="E-mail" maxlength="30">
+            <input type="email" class="form-control is-invalid" id="email" name="email" required placeholder="E-mail" maxlength="30">
             <span class="error">Please choose a username. <?php echo $emailErr; ?></span>
               <br><br>
               <!-- <label for="password"></label>
