@@ -128,7 +128,16 @@ section article a:hover{
     background-color: #c3c2c0;
     transition: ease-in-out all 0.3s;
 }
-#mail{
+#apellido{
+    width: 50%;
+    border-radius: 20px;
+    margin-bottom: 4%;
+    border: none;
+    padding: 1em;
+    background-color: #c3c2c0;
+    transition: ease-in-out all 0.3s;
+}
+#email{
     width: 50%;
     border-radius: 20px;
     margin-bottom: 4%;
@@ -148,6 +157,10 @@ section article a:hover{
 }
 
 /* Login */
+/* section div form span{
+    display: flex;
+    color: white;
+} */
 .login{
     justify-content: center;
     margin: 110px 100px;
