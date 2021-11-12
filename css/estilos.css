@@ -119,7 +119,11 @@ section article a:hover{
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
 }
+/* .campos{
+    margin: 50px;
+} */
 #name{
+    display: inline;
     width: 50%;
     border-radius: 20px;
     margin-bottom: 4%;
@@ -129,6 +133,7 @@ section article a:hover{
     transition: ease-in-out all 0.3s;
 }
 #apellido{
+    display: inline;
     width: 50%;
     border-radius: 20px;
     margin-bottom: 4%;
@@ -138,6 +143,7 @@ section article a:hover{
     transition: ease-in-out all 0.3s;
 }
 #email{
+    display: inline;
     width: 50%;
     border-radius: 20px;
     margin-bottom: 4%;
@@ -147,6 +153,7 @@ section article a:hover{
     transition: ease-in-out all 0.3s;
 }
 #message{
+    display: inline;
     width: 50%;
     border-radius: 20px;
     margin-bottom: 4%;
@@ -155,13 +162,8 @@ section article a:hover{
     background-color: #c3c2c0;
     transition: ease-in-out all 0.3s;
 }
-
-/* Login */
-/* section div form span{
-    display: flex;
-    color: white;
-} */
 .login{
+    display: inline;
     justify-content: center;
     margin: 110px 100px;
     padding: 100px 100px;
@@ -170,6 +172,7 @@ section article a:hover{
     justify-content: center;
 }
 #password{
+    display: inline;
     width: 50%;
     border-radius: 20px;
     margin-bottom: 4%;

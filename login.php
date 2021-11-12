@@ -57,21 +57,30 @@
     ?>
     <section class="login">
       <div class="row center">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-10 form">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 form">
           <!-- <p><span class="error">* required field</span></p> -->
           <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+          <div>
             <input type="text" class="form-control is-invalid" id="name" name="name" placeholder="Nombre" maxlength="15" required >
             <div class="invalid-feedback">
             <span class="error"><?php echo $nameErr; ?></span>
-            <br><br>
+            </div>
+            <div>
             <input type="email" class="form-control is-invalid" id="email" name="email" placeholder="E-mail" maxlength="30" required >
             <span class="error"><?php echo $emailErr; ?></span>
-              <br><br>
+              </div>
+              <div>
               <label for="password"></label>
               <input type="password" class="form-control is-invalid" id="password" placeholder="Contraseña" name="password" maxlength="12" required >
               <span class="error"><?php echo $passwordErr; ?></span>
-              <br><br>
+              </div>
+              <div>
               <input type="submit" name="submit" id="submit">
+              </div>
+              <div>
+            <a href="register.php">Crea una cuenta</a><br>
+            <a href="https://accounts.google.com/signin/v2/usernamerecovery?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">¿Olvidaste tu contraseña?</a>
+          </div>
           </form>
         </div>
         </div>

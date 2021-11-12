@@ -28,27 +28,32 @@
       </div>
     </div>
     <?php
-    // define variables and set to empty values
-    $nameErr = $emailErr = $websiteErr = "";
-    $name = $email = $website = "";
+    // Definir las variables y setear sus valores:
+    $nameError = $emailError = $apellidoError = $messageError ="";
+    $name = $email = $apellido = $message = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
       if (empty($_POST["name"])) {
-        $nameErr = "Name is required";
+        $nameError = "Name is required";
       } else {
         $name = test_input($_POST["name"]);
       }
 
       if (empty($_POST["email"])) {
-        $emailErr = "Email is required";
+        $emailError = "Email is required";
       } else {
         $email = test_input($_POST["email"]);
       }
 
-      if (empty($_POST["website"])) {
-        $website = "";
+      if (empty($_POST["apellido"])) {
+        $apellidoError = "Campo requerido";
       } else {
-        $website = test_input($_POST["website"]);
+        $apellido = test_input($_POST["apellido"]);
+      }
+      if (empty($_POST["message"])){
+        $messageError="Campo valido";
+      }else{
+        $message = test_input($_POST["message"]);
       }
     }
 
@@ -63,56 +68,28 @@
     <section>
       <div class="row center">
         <div class="col-12 col-sm-12 col-md-12 col-lg-8 form">
-          <!-- <form method="POST">
-    <label for="name" class="form-label"></label>
-    <input type="text" class="form-control is-invalid" placeholder="Nombre" id="name" required>
-    <div class="invalid-feedback">
-    Please choose a name.
-    </div>
-    <label for="apellido" class="form-label"></label>
-    <input type="text" class="form-control is-valid" placeholder="Apellido" id="apellido" required>
-    <div class="valid-feedback">
-      Not require.
-    </div>
-    <label for="mail" class="form-label"></label>
-    <div class="input-group has-validation">
-      <span class="input-group-text" id="inputGroupPrepend3">@</span>
-      <input type="email" class="form-control is-invalid" id="mail" name="mail" placeholder="E-mail" required>
-      <div id="mailFeedback" class="invalid-feedback">
-        Please choose a username.
-      </div>
-    <label for="password" class="form-label"></label>
-    <input type="password" class="form-control is-invalid" placeholder="Contraseña" id="password" aria-describedby="validationServer05Feedback" required>
-    <div id="validationServer05Feedback" class="invalid-feedback">
-    </div>
-    <textarea name="message" id="message" cols="30" rows="10" maxlength="400" placeholder="Mensaje"></textarea>
-  <input type="submit" name="submit" id="submit">
-</form>
-</div> -->
-          <!-- </div> -->
           <!-- <p><span class="error">* required field</span></p> -->
           <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-            <input type="text" class="form-control is-invalid" id="name" name="name" required placeholder="Nombre y Apellido" maxlength="15">
-            <div class="invalid-feedback">
-            <span class="error"> Please choose a name. <?php echo $nameErr; ?></span>
-            <br><br>
-            <input type="email" class="form-control is-invalid" id="email" name="email" required placeholder="E-mail" maxlength="30">
-            <span class="error">Please choose a username. <?php echo $emailErr; ?></span>
-              <br><br>
-              <!-- <label for="password"></label>
-              <input type="password" class="form-control is-invalid" id="password" required placeholder="Contraseña" name="password" maxlength="12">
-              <span class="error"><?php echo $websiteErr; ?></span>
-              <br><br> -->
-              <textarea name="message" id="message" cols="30" rows="10" maxlength="400" placeholder="Mensaje"></textarea><br>
+          <div class="campos">
+            <input type="text" class="form-control is-invalid" id="name" name="name" placeholder="Nombre" maxlength="15" required>
+          </div>
+            <div class="invalid-feedback"></div>
+            <span class="error"><?php echo $nameError; ?></span>
+            <div class="campos">
+            <input type="text" class="form-control is-invalid" id="apellido" name="apellido" placeholder="Apellido" maxlength="15" required>
+          </div>
+          <span class="error"><?php echo $apellidoError; ?></span>
+            <div class="campos">
+            <input type="email" class="form-control is-invalid" id="email" name="email" placeholder="E-mail" maxlength="30" required>
+          </div>
+            <span class="error"><?php echo $emailError; ?></span>
+              <div>
+              <textarea name="message" class="form-control is-valid" id="message" cols="30" rows="10" maxlength="400" placeholder="Mensaje" required></textarea>  
+            </div>
+              <div>
               <input type="submit" name="submit" id="submit">
+            </div>
           </form>
-          <!-- <form action="index.php" method="POST">
-            <input type="text" id="name" name="name" required placeholder="Nombre y Apellido" maxlength="30"><br>
-            <label for="mail"></label>
-            <input type="email" id="mail" name="mail" required placeholder="E-mail" maxlength="30"><br>
-            <textarea name="message" id="message" cols="30" rows="10" maxlength="400" placeholder="Mensaje"></textarea><br>
-            <input type="submit" name="submit" id="submit">
-          </form> -->
         </div>
         <?php
         // echo "<h2>Los datos enviados a json:</h2>";
@@ -126,13 +103,14 @@
         //abrir el archivo datos.json y subirlo a memoria
         $archivo = file_get_contents("datos.json");
         $arreglodatos = json_decode($archivo, true);
-        //armo el arreglo con los datos del formulario
-        $miarreglo = array("name" => $name, "email" => $email, "sitio" => $website);
+        //armo el arreglo con los datos del formulario:
+        $miarreglo = array("name" => $name, "email" => $email, "apellido" => $apellido , "message"=> $message );
+        //agregar este arreglo al arreglo en memoria:
         array_push($arreglodatos, $miarreglo);
-        //agregar este arreglo al arreglo en memoria
 
-        //convierto el arreglo a formato JSON  y lo guardo
+        //Convertimos el arreglo a formato json:
         $salidaJson = json_encode($arreglodatos);
+        //Lo guardamos:
         file_put_contents("datos.json", $salidaJson)
         ?>
         <div class="col-12 col-sm-12 col-md-12 col-lg-4">
@@ -153,8 +131,8 @@
             </div>
           </div>
           <div>
-            <a href="/index.html">Crea una cuenta</a><br>
-            <a href="/index.html">¿Olvidaste tu contraseña?</a>
+            <a href="register.php">Crea una cuenta</a><br>
+            <a href="https://accounts.google.com/signin/v2/usernamerecovery?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">¿Olvidaste tu contraseña?</a>
           </div>
         </div>
       </div>
