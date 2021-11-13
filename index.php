@@ -40,7 +40,7 @@
       <a class="carousel-control-next" href="#miCarousel" data-slide="next">
         <span class="carousel-control-next-icon"></span>
       </a>
-    </div>
+    </div><br>
     <!--Buscador-->
     <div class="row center">
       <div class="col-6 col-sm-6 col-md-6 col-lg-3">
@@ -68,7 +68,7 @@
           <img src="img/banner_more/search.png" alt="search" class="search" width="512" height="512">
         </div>
       </div>
-    </div>
+    </div><br>
     <!--Cartelera-->
     <section class="row center">
       <?php
