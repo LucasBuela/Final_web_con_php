@@ -34,7 +34,7 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
       if (empty($_POST["name"])) {
-        $nameError = "Name is required";
+        $nameError = "<p><span class='error'>* Campo requerido</span></p>";
       } else {
         $name = test_input($_POST["name"]);
       }
@@ -65,26 +65,26 @@
       return $data;
     }
     ?>
-    <section>
+    <section class="login-buttom">
       <div class="row center">
         <div class="col-12 col-sm-12 col-md-12 col-lg-8 form">
           <!-- <p><span class="error">* required field</span></p> -->
           <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-          <div class="campos">
+          <div>
             <input type="text" class="form-control is-invalid" id="name" name="name" placeholder="Nombre" maxlength="15" required>
           </div>
             <div class="invalid-feedback"></div>
             <span class="error"><?php echo $nameError; ?></span>
-            <div class="campos">
-            <input type="text" class="form-control is-invalid" id="apellido" name="apellido" placeholder="Apellido" maxlength="15" required>
+            <div>
+            <input type="text" class="form-control is-valid" id="apellido" name="apellido" placeholder="Apellido" maxlength="15">
           </div>
           <span class="error"><?php echo $apellidoError; ?></span>
-            <div class="campos">
+            <div>
             <input type="email" class="form-control is-invalid" id="email" name="email" placeholder="E-mail" maxlength="30" required>
           </div>
             <span class="error"><?php echo $emailError; ?></span>
               <div>
-              <textarea name="message" class="form-control is-valid" id="message" cols="30" rows="10" maxlength="400" placeholder="Mensaje" required></textarea>  
+              <textarea name="message" class="form-control is-invalid" id="message" cols="30" rows="10" maxlength="400" placeholder="Mensaje" required></textarea>  
             </div>
               <div>
               <input type="submit" name="submit" id="submit">
@@ -130,9 +130,10 @@
               <a class="movie-theater" href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419" target="_blank"><img class="location" src="img/banner_more/locator-map.svg" alt="Multiplex Adress">Multiplex Palmas</a>
             </div>
           </div>
+          <!-- para que estos links tomen la transicion a blanco deberian estar dentro del formulario! -->
           <div>
             <a href="register.php">Crea una cuenta</a><br>
-            <a href="https://accounts.google.com/signin/v2/usernamerecovery?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">¿Olvidaste tu contraseña?</a>
+            <a href="https://accounts.google.com/signin/v2/usernamerecovery?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank" >¿Olvidaste tu contraseña?</a>
           </div>
         </div>
       </div>

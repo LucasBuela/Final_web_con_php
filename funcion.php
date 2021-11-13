@@ -30,7 +30,7 @@
     </div>
     <div class="row center">
       <div class="col col-sm-4 col-md-4 col-lg">
-        <img src="img/banner_more/movie.png" alt="pelicula" class="funImg center" width="512" height="512">
+        <img src="img/banner_more/movie.png" alt="pelicula" class="funImg center" width="500" height="512">
         <div class="center">
           <p class="info"><strong>1.</strong>
             <span>Elegí la película.</span>
@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class=" col col-sm-4 col-md-4 col-lg">
-        <img src="img/banner_more/codigo.png" alt="codigo" class="funImg center" width="512" height="512">
+        <img src="img/banner_more/codigo.png" alt="codigo" class="funImg center" width="500" height="512">
         <div class="center">
           <p class="info"><strong>2.</strong>
             <span>Escanea el código
@@ -60,7 +60,7 @@
       </div>
     </div>
     <!-- Probar poniendo cada informacion,titulo, como si fueran articulos -->
-    <section>
+    <section class="login-buttom">
       <?php
         $tittle=array("¿Cómo funciona?","¿Cuáles son los pasos para ver una película?","Desde la compra", "¿cuántos días tengo para ver la película?","¿A dónde me contacto si tengo un problema con el código?");
         $informacion= array("Mi función es una plataforma de venta de códigos de películas que se estrenan

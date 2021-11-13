@@ -8,7 +8,7 @@ body{
 /****Contenedor****/
 .container{
     justify-content: center;
-    padding-right: -50px;
+    position: relative;
 }
 
 /******Fondo del Nav y Footer******/
@@ -119,9 +119,6 @@ section article a:hover{
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
 }
-/* .campos{
-    margin: 50px;
-} */
 #name{
     display: inline;
     width: 50%;
@@ -163,13 +160,12 @@ section article a:hover{
     transition: ease-in-out all 0.3s;
 }
 .login{
+    margin-top: 100px;
     display: inline;
     justify-content: center;
-    margin: 110px 100px;
-    padding: 100px 100px;
 }
-.login-center{
-    justify-content: center;
+.login-buttom{
+    margin-bottom: 10rem;
 }
 #password{
     display: inline;
@@ -190,11 +186,16 @@ section form a:hover{
     color: white;
 }
 
+/*** error de validacion***/
+/* .error{
+    color: red;
+} */
+
 
 /*Boton Enviar*/
 #submit{
     font-family: 'Roboto Condensed', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     width: 100px;
     height: 40px;
     background-color: #410004;
@@ -238,6 +239,7 @@ section form a:hover{
 
 /******* Redes Sociales en Footer*****/
 .social-media{
+    padding-top: 0.3rem;
     width: 25px;
     height: 25px;
 }
@@ -273,7 +275,7 @@ footer p {
     margin: 0;
 }
 .footer{
-    padding-top: 5px;
+    padding-top: 0.4rem;
     color: #fff;
     text-align: left;
 }

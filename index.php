@@ -21,34 +21,7 @@
   <?php
   require "header.php";
   ?>
-  
-  <div class="container">
-    <?php
-        //     $array_banner=array(
-        //       array("img"=>"img/banner_more/banner1.jpg","banner"=>"banner 1"),
-        //       array("img"=>"img/banner_more/banner2.jpg","banner"=>"banner 2")
-
-        //     );
-
-        //       foreach($array_banner as $banners){
-        //     echo '<div id="miCarousel" class="carousel slide" data-ride="carousel" data-interval="2300">
-        //     <div class="carousel-inner banner">
-        //   <div class="carousel-item active">
-        //     <img src='.$banners["img"].'alt='.$banners["banner"].' width="1920" height="1080">
-        //   </div>
-        // </div>
-        // <!-- Flechas -->
-        // <a class="carousel-control-prev" href="#miCarousel" data-slide="prev">
-        //   <span class="carousel-control-prev-icon"></span>
-        // </a>
-        // <a class="carousel-control-next" href="#miCarousel" data-slide="next">
-        //   <span class="carousel-control-next-icon"></span>
-        // </a>
-        // </div>
-        // ';
-        // }
-
-        ?> 
+  <div class="container"> 
     <!--Imagenes Carousel-->
     <div id="miCarousel" class="carousel slide" data-ride="carousel" data-interval="2300">
       <!-- Imagenes-->
