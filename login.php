@@ -75,24 +75,23 @@
             <div>
             <a href="register.php">Crea una cuenta</a><br>
             <a href="https://accounts.google.com/signin/v2/usernamerecovery?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank" >¿Olvidaste tu contraseña?</a><br>
-          </div><br><br>
+          </div><br>
           </form>
           <div class="cinemas">
             <div class="cinema">
-              <a class="movie-theater" href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419" target="_blank"><img class="location" src="img/banner_more/locator-map.svg" alt="Multiplex Adress">Multiplex Lavalle</a>
+              <a class="movie-theater" href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419" target="_blank"><img class="location" src="img/banner_more/locator-map.svg" alt="Multiplex Adress"><br>Multiplex<br> Lavalle</a>
             </div>
             <div class="cinema">
-              <a class="movie-theater" href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419" target="_blank"><img class="location" src="img/banner_more/locator-map.svg" alt="Multiplex Adress">Multiplex Belgrano</a>
+              <a class="movie-theater" href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419" target="_blank"><img class="location" src="img/banner_more/locator-map.svg" alt="Multiplex Adress"><br>Multiplex<br> Belgrano</a>
             </div>
             <div class="cinema">
-              <a class="movie-theater" href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419" target="_blank"><img class="location" src="img/banner_more/locator-map.svg" alt="Multiplex Adress">Multiplex
+              <a class="movie-theater" href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419" target="_blank"><img class="location" src="img/banner_more/locator-map.svg" alt="Multiplex Adress"><br>Multiplex<br>
                 Arte</a>
             </div>
             <div class="cinema">
-              <a class="movie-theater" href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419" target="_blank"><img class="location" src="img/banner_more/locator-map.svg" alt="Multiplex Adress">Multiplex Palmas</a>
+              <a class="movie-theater" href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419" target="_blank"><img class="location" src="img/banner_more/locator-map.svg" alt="Multiplex Adress"><br>Multiplex<br> Palmas</a>
             </div>
           </div>
-
         </div>
         <?php
         // echo "<h2>Los datos enviados a json:</h2>";
