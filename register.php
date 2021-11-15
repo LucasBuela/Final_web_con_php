@@ -47,7 +47,7 @@
       }
 
       if (empty($_POST["apellido"])) {
-        $apellidoError = "Campo valido";
+        $apellidoError = null;
       } else {
         $apellido = test_input($_POST["apellido"]);
       }
