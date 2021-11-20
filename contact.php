@@ -73,19 +73,19 @@
           <div>
             <input type="text" class="form-control is-invalid" id="name" name="name" placeholder="Nombre" maxlength="15" required>
           </div>
-            <div class="invalid-feedback"></div>
-            <span class="error"><?php echo $nameError; ?></span>
+            <div class="invalid-feedback error">Complete este campo.</div>
             <div>
             <input type="text" class="form-control is-valid" id="apellido" name="apellido" placeholder="Apellido" maxlength="15">
           </div>
-          <span class="error"><?php echo $apellidoError; ?></span>
+          <div class="valid-feedback">Campo valido.</div>
             <div>
             <input type="email" class="form-control is-invalid" id="email" name="email" placeholder="E-mail" maxlength="30" required>
           </div>
-            <span class="error"><?php echo $emailError; ?></span>
+          <div class="invalid-feedback">Complete este campo.</div>
               <div>
               <textarea name="message" class="form-control is-invalid" id="message" cols="30" rows="10" maxlength="400" placeholder="Mensaje" required></textarea>  
             </div>
+            <div class="valid-feedback">Campo valido.</div>
               <div>
               <input type="submit" name="submit" id="submit">
             </div>
@@ -101,7 +101,7 @@
         // echo "<br>";
 
         //abrir el archivo datos.json y subirlo a memoria
-        $archivo = file_get_contents("datos.json");
+        $archivo = file_get_contents("datos_contact.json");
         $arreglodatos = json_decode($archivo, true);
         //armo el arreglo con los datos del formulario:
         $miarreglo = array("name" => $name, "email" => $email, "apellido" => $apellido , "message"=> $message );
@@ -111,7 +111,7 @@
         //Convertimos el arreglo a formato json:
         $salidaJson = json_encode($arreglodatos);
         //Lo guardamos:
-        file_put_contents("datos.json", $salidaJson)
+        file_put_contents("datos_contact.json", $salidaJson)
         ?>
         <div class="col-12 col-sm-12 col-md-12 col-lg-4">
           <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.7248819937686!2d-58.458479284237875!3d-34.56052056272199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d35b8bc4b1%3A0x9e4d4bbc42e0bee5!2sMultiplex%20Belgrano%201%2C%202%2C%203!5e0!3m2!1ses-419!2sar!4v1624844914737!5m2!1ses-419!2sar" width="100" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

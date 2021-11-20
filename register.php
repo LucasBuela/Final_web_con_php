@@ -89,7 +89,6 @@
             <div>
             <input type="email" class="form-control is-invalid" id="email" name="email" placeholder="E-mail" maxlength="30" required>
           </div>
-            <span class="error"><?php echo $emailError; ?></span>
             <div>
               <input type="password" class="form-control is-invalid" id="password" placeholder="Contraseña" name="password" maxlength="12" required >
               <span class="error"><?php echo $passwordErr;?></span>
@@ -116,7 +115,7 @@
         // echo "<br>";
 
         //abrir el archivo datos.json y subirlo a memoria
-        $archivo = file_get_contents("datos.json");
+        $archivo = file_get_contents("datos_register.json");
         $arreglodatos = json_decode($archivo, true);
         //armo el arreglo con los datos del formulario:
         $miarreglo = array("name" => $name, "apellido" => $apellido ,"email" => $email,  "password"=> $password, "confirm password"=> $password );
@@ -126,7 +125,7 @@
         //Convertimos el arreglo a formato json:
         $salidaJson = json_encode($arreglodatos);
         //Lo guardamos:
-        file_put_contents("datos.json", $salidaJson)
+        file_put_contents("datos_register.json", $salidaJson)
         ?>
       </section>
   </div>

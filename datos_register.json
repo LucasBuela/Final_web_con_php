@@ -1,0 +1,16 @@
+[
+  {
+    "name": "",
+    "apellido": "",
+    "email": "",
+    "password": "",
+    "confirm password": ""
+  },
+  {
+    "name": "lucas",
+    "apellido": "buela",
+    "email": "lucas.davinci@gmail.com",
+    "password": "1234",
+    "confirm password": "1234"
+  }
+]

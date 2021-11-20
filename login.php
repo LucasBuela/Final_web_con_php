@@ -103,7 +103,7 @@
         // echo "<br>";
 
         //abrir el archivo datos.json y subirlo a memoria
-        $archivo = file_get_contents("datos.json");
+        $archivo = file_get_contents("datos_login.json");
         $arreglodatos = json_decode($archivo, true);
         //armo el arreglo con los datos del formulario:
         $miarreglo = array("email" => $email, "password"=> $password);
@@ -113,7 +113,7 @@
         //Convertimos el arreglo a formato json:
         $salidaJson = json_encode($arreglodatos);
         //Lo guardamos:
-        file_put_contents("datos.json", $salidaJson)
+        file_put_contents("datos_login.json", $salidaJson)
         ?>
         <div class="col-12 col-sm-12 col-md-12 col-lg-4">
         <div id="miCarousel" class="carousel slide" data-ride="carousel" data-interval="2300">
