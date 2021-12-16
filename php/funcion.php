@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body class="blackground padding">
@@ -30,7 +30,7 @@
     </div>
     <div class="row center">
       <div class="col col-sm-4 col-md-4 col-lg">
-        <img src="img/banner_more/movie.png" alt="pelicula" class="funImg center" width="500" height="512">
+        <img src="../img/banner_more/movie.png" alt="pelicula" class="funImg center" width="500" height="512">
         <div class="center">
           <p class="info"><strong>1.</strong>
             <span>Elegí la película.</span>
@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class=" col col-sm-4 col-md-4 col-lg">
-        <img src="img/banner_more/codigo.png" alt="codigo" class="funImg center" width="500" height="512">
+        <img src="../img/banner_more/codigo.png" alt="codigo" class="funImg center" width="500" height="512">
         <div class="center">
           <p class="info"><strong>2.</strong>
             <span>Escanea el código
@@ -48,7 +48,7 @@
         </div>
       </div>
       <div class=" col col-sm-4 col-md-4 col-lg">
-        <img src="img/banner_more/telefono.png" alt="celular" class="funImg center" width="512" height="512">
+        <img src="../img/banner_more/telefono.png" alt="celular" class="funImg center" width="512" height="512">
         <div class="center">
           <p class="info"><strong>3.</strong>
             <span>¡Mirala en

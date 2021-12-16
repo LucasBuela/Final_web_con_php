@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body class="blackground">
@@ -27,10 +27,10 @@
       <!-- Imagenes-->
       <div class="carousel-inner banner">
         <div class="carousel-item active">
-          <img src="img/banner_more/banner2.jpg" alt="banner 2" width="1920" height="1080">
+          <img src="../img/banner_more/banner2.jpg" alt="banner 2" width="1920" height="1080">
         </div>
         <div class="carousel-item">
-          <img src="img/banner_more/banner1.jpg" alt="banner 1" width="1920" height="1080">
+          <img src="../img/banner_more/banner1.jpg" alt="banner 1" width="1920" height="1080">
         </div>
       </div>
       <!-- Flechas -->
@@ -65,7 +65,7 @@
       <!--Lupa-->
       <div class="col-1 d-none d-lg-block">
         <div>
-          <img src="img/banner_more/search.png" alt="search" class="search" width="512" height="512">
+          <img src="../img/banner_more/search.png" alt="search" class="search" width="512" height="512">
         </div>
       </div>
     </div><br>
@@ -74,7 +74,7 @@
       <?php
       $index_array = array(
         array(
-          "img" => "img/movies/cruella.jpg",
+          "img" => "../img/movies/cruella.jpg",
           "tittle" => "Cruella 2021",
           "review" => "Decidida a convertirse en una exitosa diseñadora de moda, una joven y
         creativa estafadora llamada Estella se asocia con un par de ladrones para sobrevivir en las calles de
@@ -84,11 +84,11 @@
           "cast" => "REPARTO: Emma Stone, Emma Thompson, John McCrea.",
           "direction" => "DIRECCIÓN: Craig Gillespie.",
           "year" => "Drama - 2021 - 1h 34min.",
-          "link" => "php/cruella.php"
+          "link" => "cruella.php"
         ),
 
         array(
-          "img" => "img/movies/mortal_kombat.jpg",
+          "img" => "../img/movies/mortal_kombat.jpg",
           "tittle" => "Mortal Kombat",
           "review" => "Cole Young, el luchador de MMA, acostumbrado a recibir palizas por
         dinero, desconoce su ascendencia, y tampoco sabe por qué el emperador Shang Tsung de Outworld ha enviado a
@@ -98,11 +98,11 @@
           "cast" => "REPARTO: Lewis Tan, Jessica McNamee, Josh Lawson.",
           "direction" => "DIRECCIÓN: Simon McQuoid.",
           "year" => "Acción/Aventura - 2021 - 1h 10min.",
-          "link" => "php/mortal.php"
+          "link" => "mortal.php"
         ),
 
         array(
-          "img" => "img/movies/raya_and_the_last_dragon.jpg",
+          "img" => "../img/movies/raya_and_the_last_dragon.jpg",
           "tittle" => "Raya y el Último Dragón",
           "review" => "En el fantástico mundo de Kumandra, humanos y dragones vivieron juntos
         en perfecta armonía. Sin embargo, cuando unas fuerzas del mal amenazaron el territorio, los dragones se
@@ -112,18 +112,18 @@
           "cast" => "REPARTO: Awkwafina, Kelly Marie Tran, Sandra Oh.",
           "direction" => "DIRECCIÓN: Carlos López Estrada, Don Hall.",
           "year" => "Aventura - 2021 - 1h 14min.",
-          "link" => "php/raya.php"
+          "link" => "raya.php"
         ),
 
         array(
-          "img" => "img/movies/the_conjuring.jpg",
+          "img" => "../img/movies/the_conjuring.jpg",
           "tittle" => "El conjuro 3",
           "review" => "Años 80. Ed y Lorraine Warren se enfrentan a un nuevo caso de la mano
         de un hombre, Arne Cheyne Johnson, acusado de un terrible asesinato tras haber sido poseído por un demonio.",
           "cast" => "REPARTO: Vera Farmiga, Patrick Wilson, Ruairi O'Connor.",
           "direction" => "DIRECCIÓN: Michael Chaves.",
           "year" => "Terror - 2021 - 1h 12min.",
-          "link" => "php/conjuring.php"
+          "link" => "conjuring.php"
         ),
       );
       foreach ($index_array as $movies) {

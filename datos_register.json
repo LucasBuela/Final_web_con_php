@@ -1,16 +1,1 @@
-[
-  {
-    "name": "",
-    "apellido": "",
-    "email": "",
-    "password": "",
-    "confirm password": ""
-  },
-  {
-    "name": "lucas",
-    "apellido": "buela",
-    "email": "lucas.davinci@gmail.com",
-    "password": "1234",
-    "confirm password": "1234"
-  }
-]
+[{"name":"","apellido":"","email":"","password":"","confirm password":""},{"name":"asd","apellido":"asd","email":"325wfaqf@asfd","password":"asd","confirm password":"asd"}]

@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Log in</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body class="blackground padding">
@@ -24,7 +24,7 @@
   <div class="container">
     <div class="row center">
       <div class="col-12">
-        <h1 class="tittle">Login</h1>
+        <h1 class="tittle">Log in</h1>
         <p class="info">Introduce un e-mail y contraseña para acceder.</p>
       </div>
     </div>
@@ -79,17 +79,17 @@
           </form>
           <div class="cinemas">
             <div class="cinema">
-              <a class="movie-theater" href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419" target="_blank"><img class="location" src="img/banner_more/locator-map.svg" alt="Multiplex Adress"><br>Multiplex<br> Lavalle</a>
+              <a class="movie-theater" href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419" target="_blank"><img class="location" src="../img/banner_more/locator-map.svg" alt="Multiplex Adress"><br>Multiplex<br> Lavalle</a>
             </div>
             <div class="cinema">
-              <a class="movie-theater" href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419" target="_blank"><img class="location" src="img/banner_more/locator-map.svg" alt="Multiplex Adress"><br>Multiplex<br> Belgrano</a>
+              <a class="movie-theater" href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419" target="_blank"><img class="location" src="../img/banner_more/locator-map.svg" alt="Multiplex Adress"><br>Multiplex<br> Belgrano</a>
             </div>
             <div class="cinema">
-              <a class="movie-theater" href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419" target="_blank"><img class="location" src="img/banner_more/locator-map.svg" alt="Multiplex Adress"><br>Multiplex<br>
+              <a class="movie-theater" href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419" target="_blank"><img class="location" src="../img/banner_more/locator-map.svg" alt="Multiplex Adress"><br>Multiplex<br>
                 Arte</a>
             </div>
             <div class="cinema">
-              <a class="movie-theater" href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419" target="_blank"><img class="location" src="img/banner_more/locator-map.svg" alt="Multiplex Adress"><br>Multiplex<br> Palmas</a>
+              <a class="movie-theater" href="https://www.google.com/maps/place/Multiplex+Belgrano+1,+2,+3/@-34.560525,-58.456291,15z/data=!4m5!3m4!1s0x0:0x9e4d4bbc42e0bee5!8m2!3d-34.5605511!4d-58.4563351?hl=es-419" target="_blank"><img class="location" src="../img/banner_more/locator-map.svg" alt="Multiplex Adress"><br>Multiplex<br> Palmas</a>
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@
         // echo "<br>";
 
         //abrir el archivo datos.json y subirlo a memoria
-        $archivo = file_get_contents("datos_login.json");
+        $archivo = file_get_contents("../datos_login.json");
         $arreglodatos = json_decode($archivo, true);
         //armo el arreglo con los datos del formulario:
         $miarreglo = array("email" => $email, "password"=> $password);
@@ -113,17 +113,17 @@
         //Convertimos el arreglo a formato json:
         $salidaJson = json_encode($arreglodatos);
         //Lo guardamos:
-        file_put_contents("datos_login.json", $salidaJson)
+        file_put_contents("../datos_login.json", $salidaJson)
         ?>
         <div class="col-12 col-sm-12 col-md-12 col-lg-4">
         <div id="miCarousel" class="carousel slide" data-ride="carousel" data-interval="2300">
       <!-- Imagenes-->
       <div class="carousel-inner banner">
         <div class="carousel-item active">
-        <img src="img/movies/spiderman.jpg" alt="spiderman" width="500" height="700">
+        <img src="../img/movies/spiderman.jpg" alt="spiderman" width="500" height="700">
         </div>
         <div class="carousel-item">
-        <img src="img/movies/spiderman.jpg" alt="spiderman" width="500" height="700">
+        <img src="../img/movies/spiderman.jpg" alt="spiderman" width="500" height="700">
         </div>
       </div>
       <!-- Flechas -->

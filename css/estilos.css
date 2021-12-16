@@ -10,6 +10,9 @@ body{
     justify-content: center;
     position: relative;
 }
+.foot{
+        padding-bottom: 10.6rem;
+}
 
 /******Fondo del Nav y Footer******/
 .background{

@@ -4,7 +4,7 @@ $txt_header='
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark background">
    <div class="container">
      <a class="navbar-brand" href="index.php">
-       <img src="img/banner_more/cineOnline.png" alt="Logo" width="98" height="28">
+       <img src="../img/banner_more/cineOnline.png" alt="Logo" width="98" height="28">
      </a>
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@ $txt_header='
            <a class="nav-link" href="contact.php">Contacto</a>
          </li>
          <li class="nav-item">
-         <a class="nav-link" href="login.php">Login</a>
+         <a class="nav-link" href="login.php">Log In</a>
        </li>
        </ul>
      </div>

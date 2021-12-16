@@ -18,9 +18,9 @@
 </head>
 <body class="blackground">
 <?php
-    require "../header.php";
+    require "header.php";
   ?>
-  <div class="container">
+  <div class="container foot">
     <div class="row center">
       <div class=" col-12">
         <h1 class="tittle">El Conjuro 3</h1>
@@ -55,7 +55,7 @@
   </div>
   <!--Footer-->
   <?php
-    require "../footer.php";
+    require "footer.php";
   ?>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

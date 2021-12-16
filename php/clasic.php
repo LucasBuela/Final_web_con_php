@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body class="blackground">
@@ -32,7 +32,7 @@
 
       $movies_array = array(
         array(
-          "img" => "img/movies/clockwork.jpg",
+          "img" => "../img/movies/clockwork.jpg",
           "tittle" => "A CLOCKWORK ORANGE",
           "review" => "Estado de bienestar futurista, Alex (MalcolmMcDowell),un joven
         despiadado, duerme todo el día y pasa las noches vagando por la ciudad con sus droogs (amigos), atacando a
@@ -42,11 +42,11 @@
           "cast" => "REPARTO: Malcom McDowell, Patrick Magee, Adrianne Corri.",
           "direction" => "DIRECCIÓN: Stanley Kubrick.",
           "year" => "Crimen - 1971 - 2h 17min.",
-          "link" => "php/clock.php"
+          "link" => "clock.php"
         ),
 
         array(
-          "img" => "img/movies/star_wars.jpg",
+          "img" => "../img/movies/star_wars.jpg",
           "tittle" => "STAR WARS: RETURN OF THE JEDI EPISODE VI",
           "review" => "Luke Skywalker y la princesa Leia deben viajar a Tatooine para liberar
         a Han Solo. Para conseguirlo, deben infiltrarse en la peligrosa guarida de Jabba the Hutt, el gángster más
@@ -55,11 +55,11 @@
           "cast" => "REPARTO: Mark Hamill,Carrie Fisher,Harrison Ford.",
           "direction" => "DIRECCIÓN: Richard Marquand.",
           "year" => "Ciencia Ficción/Acción - 1983 - 2h 16min.",
-          "link" => "php/star.php"
+          "link" => "star.php"
         ),
 
         array(
-          "img" => "img/movies/the_thing.jpg",
+          "img" => "../img/movies/the_thing.jpg",
           "tittle" => "THE THING",
           "review" => "En una estación experimental remota de la Antártida, un equipo de
         científicos de investigación estadounidenses ven cómo en su campamento base un helicóptero noruego dispara
@@ -69,11 +69,11 @@
           "cast" => "REPARTO: Kurt Russell, Wilford Brimley, Keith David.",
           "direction" => "DIRECCIÓN: John Carpenter.",
           "year" => "Terror - 1983 - 1h 5min.",
-          "link" => "php/thing.php"
+          "link" => "thing.php"
         ),
 
         array(
-          "img" => "img/movies/tnotld.jpg",
+          "img" => "../img/movies/tnotld.jpg",
           "tittle" => "NIGHT OF THE LIVING DEAD",
           "review" => "En un cementerio de Pennsylvania, Barbara (Judith O'Dea) es atacada por
         un muerto viviente. Aterrorizada, la joven huye hacia una granja, donde también se ha refugiado Ben (Duane
@@ -81,11 +81,11 @@
           "cast" => "REPARTO: Duane Jones, Judith O'Dea y Karl Hardman.",
           "direction" => "DIRECCIÓN: George A. Romero.",
           "year" => "Terror - 1970 - 1h 36min.",
-          "link" => "php/night.php"
+          "link" => "night.php"
         ),
 
         array(
-          "img" => "img/movies/childs_play.jpg",
+          "img" => "../img/movies/childs_play.jpg",
           "tittle" => "CHILD´S PLAY",
           "review" => "Después de mudarse a una ciudad nueva, Karen le regala a su hijo Andy
         un muñeco que se convierte en el mejor amigo del niño. Lo que ellos desconocían es que el muñeco es un ser
@@ -94,11 +94,11 @@
           "cast" => "REPARTO: Devon Sawa, Zackary Arthur, Alyvia Alyn Lind.",
           "direction" => "DIRECCIÓN: Don Mancini.",
           "year" => "Terror - 1988 - 1h 27min.",
-          "link" => "php/child.php"
+          "link" => "child.php"
         ),
 
         array(
-          "img" => "img/movies/scarface.jpg",
+          "img" => "../img/movies/scarface.jpg",
           "tittle" => "SCARFACE",
           "review" => "Tony Montana es un emigrante cubano frío e implacable que se instala en
         Miami con el propósito de convertirse en un gángster importante. Con la colaboración de su amigo Manny
@@ -107,11 +107,11 @@
           "cast" => "REPARTO: Al Pacino,Steven Bauer, Michelle Pfeiffer.",
           "direction" => "DIRECCIÓN: Brian De Palma.",
           "year" => "Drama/Crimen - 1983 - 1h 63min.",
-          "link" => "php/scarface.php"
+          "link" => "scarface.php"
         ),
 
         array(
-          "img" => "img/movies/taxi_driver.jpg",
+          "img" => "../img/movies/taxi_driver.jpg",
           "tittle" => "TAXI DRIVER",
           "review" => "Ambientada en la Nueva York de la década de 1970, poco después de que
         terminara la guerra de Vietnam, se centra en la vida de Travis Bickle, un excombatiente solitario e
@@ -120,11 +120,11 @@
           "cast" => "REPARTO: Robert De Niro, Cybill Shepherd, Jodie Foster.",
           "direction" => "DIRECCIÓN: Martin Scorsese.",
           "year" => "Drama/Crimen - 1976 - 1h 13min.",
-          "link" => "php/taxi.php"
+          "link" => "taxi.php"
         ),
 
         array(
-          "img" => "img/movies/the_shinning.jpg",
+          "img" => "../img/movies/the_shinning.jpg",
           "tittle" => "THE SHINING",
           "review" => "Jack Torrance(Jack Nicholson) se traslada junto a su mujer y a su
         introvertido hijo Danny a un impresionante hotel ubicado en Colorado del que ha de encargarse los
@@ -133,7 +133,7 @@
           "cast" => "REPARTO: Jack Nicholson, Shelley Duvall, Danny Lloyd.",
           "direction" => "DIRECCIÓN: Stanley Kubrick.",
           "year" => "Drama/Terror - 1980 - 1h 46min.",
-          "link" => "php/shinning.php"
+          "link" => "shinning.php"
         ),
 
       );
