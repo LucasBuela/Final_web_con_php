@@ -55,19 +55,38 @@
       $data = htmlspecialchars($data);
       return $data;
     }
+    // Validacion de contraseña
+    $contra=$password;
+    if($contra==1234){
+      echo "</h2>Contraseña valida</h2>" ;
+    }else if($contra==""){
+      echo "<h2>Complete el campo</h2>";
+    }else{
+      echo "Contraseña invalida</h2>";
+    }
     ?>
     <section class="login-buttom">
       <div class="row center">
         <div class="col-12 col-sm-12 col-md-12 col-lg-8 form login">
           <!-- <p><span class="error">* required field</span></p> -->
-          <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+          <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" class="was-validated">
             <div>
-            <input type="email" class="form-control is-invalid" id="email" name="email" placeholder="E-mail" maxlength="30" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" maxlength="30" required>
+              <div class="valid-feedback">
+              Looks good!
+             </div>
+            <div class="invalid-feedback">
+              Looks bad!
+        </div>
           </div>
-            <span class="error"><?php echo $emailError; ?></span>
             <div>
-              <input type="password" class="form-control is-invalid" id="password" placeholder="Contraseña" name="password" maxlength="12" required >
-              <span class="error"><?php echo $passwordError;?></span>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" maxlength="10" required>
+             <div class="valid-feedback">
+              Looks good!
+              </div>
+              <div class="invalid-feedback">
+              Looks bad!
+          </div>            
               </div>
               <div>
               <input type="submit" name="submit" id="submit"><br><br>
