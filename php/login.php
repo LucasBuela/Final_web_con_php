@@ -58,11 +58,11 @@
     // Validacion de contraseña
     $contra=$password;
     if($contra==1234){
-      echo "</h2>Contraseña valida</h2>" ;
+      echo "Contraseña valida";
     }else if($contra==""){
-      echo "<h2>Complete el campo</h2>";
+      echo "Complete el campo";
     }else{
-      echo "Contraseña invalida</h2>";
+      echo "Contraseña invalida";
     }
     ?>
     <section class="login-buttom">
@@ -73,23 +73,23 @@
             <div>
             <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" maxlength="30" required>
               <div class="valid-feedback">
-              Looks good!
+              Usuario valido.
              </div>
             <div class="invalid-feedback">
-              Looks bad!
+              Ingrese usuario.
         </div>
           </div>
             <div>
             <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" maxlength="10" required>
              <div class="valid-feedback">
-              Looks good!
+              Contraseña valida.
               </div>
               <div class="invalid-feedback">
-              Looks bad!
+              Ingrese contraseña
           </div>            
               </div>
               <div>
-              <input type="submit" name="submit" id="submit"><br><br>
+              <button type="submit" name="submit" id="submit">Enviar
             </div>
             <div>
             <a href="register.php">Crea una cuenta</a><br>

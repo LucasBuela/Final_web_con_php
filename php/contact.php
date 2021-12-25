@@ -87,7 +87,7 @@
             </div>
             <div class="valid-feedback">Campo valido.</div>
               <div>
-              <input type="submit" name="submit" id="submit">
+              <button type="submit" name="submit" id="submit">Enviar
             </div>
           </form>
         </div>

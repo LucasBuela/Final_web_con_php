@@ -32,15 +32,27 @@ body{
 .center{
     text-align: center;
 }
+.tittles{
+    font-family: 'Bebas Neue', cursive;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    margin: 20px 0px 20px 0px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    color: rgb(197, 22, 22);
+    text-shadow:
+      0 0 2px #fff,
+      0 0 5px #fff,
+      0 0 151px #fff;
+}
 /*** Títulos ***/
 .tittle{
     font-family: 'Bebas Neue', cursive;
     margin: 28px 0 0 0;
     color: #fff;
     text-shadow:
-      0 0 8px #fff,
-      0 0 20px #fff,
-      0 0 1px #fff;
+      0 0 2px #fff,
+      0 0 2px #fff,
+      0 0 10px #fff;
     font-size: 2em;
     margin-bottom: 2%;
 }
@@ -82,10 +94,44 @@ body{
     border-radius: 10px;
     background-color: #0f0909; 
 }
+/****** Ventana modal******/
+.modal-header{
+    background-image:url("../img/movies/background.jpg");
 
+}
+.modal-body{
+    background-color: #0f0909;
+    
+}
+.modal-footer{
+    background-image:url("../img/movies/background.jpg");
+ 
+}
+.modal-title{
+    /* font-family: 'Bebas Neue', cursive; */
+    margin: 0px 0px 0 90px;
+    color: #fff;
+    text-shadow:
+      0 0 8px #fff,
+      0 0 20px #fff,
+      0 0 1px #fff;
+    font-size: 2.5em;
+}
+.close{
+    color: #fff;
+    text-shadow:
+      0 0 8px #fff,
+      0 0 20px #fff,
+      0 0 1px #fff;
+}
+.modal-text{
+    font-family: 'Roboto Condensed', sans-serif;
+    color:#fff;
+    text-align: center;
+}
 /****** Películas ******/
 section article{
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 } 
 section article a:hover{
     text-decoration: none;

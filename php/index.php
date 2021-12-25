@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +14,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/estilos.css">
 </head>
-
 <body class="blackground">
   <!-- PHP  Header-->
   <?php
@@ -84,7 +82,12 @@
           "cast" => "REPARTO: Emma Stone, Emma Thompson, John McCrea.",
           "direction" => "DIRECCIÓN: Craig Gillespie.",
           "year" => "Drama - 2021 - 1h 34min.",
-          "link" => "cruella.php"
+          "link" => "cruella.php",
+          "modal"=>"contenido-modal",
+          "iframe"=>'<iframe width="560" height="315" src="https://www.youtube.com/embed/gmRKv7n2If8" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>',
+          "contenido-modal"=> "#contenido-modal"        
         ),
 
         array(
@@ -98,7 +101,12 @@
           "cast" => "REPARTO: Lewis Tan, Jessica McNamee, Josh Lawson.",
           "direction" => "DIRECCIÓN: Simon McQuoid.",
           "year" => "Acción/Aventura - 2021 - 1h 10min.",
-          "link" => "mortal.php"
+          "link" => "mortal.php",
+          "modal"=>"contenido_2-modal",
+          "iframe"=>'<iframe width="560" height="315" src="https://www.youtube.com/embed/-BQPKD7eozY" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>',
+          "contenido-modal"=> "#contenido_2-modal"
         ),
 
         array(
@@ -112,7 +120,12 @@
           "cast" => "REPARTO: Awkwafina, Kelly Marie Tran, Sandra Oh.",
           "direction" => "DIRECCIÓN: Carlos López Estrada, Don Hall.",
           "year" => "Aventura - 2021 - 1h 14min.",
-          "link" => "raya.php"
+          "link" => "raya.php",
+          "iframe"=>'<iframe width="560" height="315" src="https://www.youtube.com/embed/1VIZ89FEjYI" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>',
+          "modal"=>"contenido_3-modal",
+          "contenido-modal"=> "#contenido_3-modal"
         ),
 
         array(
@@ -123,15 +136,72 @@
           "cast" => "REPARTO: Vera Farmiga, Patrick Wilson, Ruairi O'Connor.",
           "direction" => "DIRECCIÓN: Michael Chaves.",
           "year" => "Terror - 2021 - 1h 12min.",
-          "link" => "conjuring.php"
+          "link" => "conjuring.php",
+          "iframe"=>'<iframe width="560" height="315" src="https://www.youtube.com/embed/S8nlMJfE6pc" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>',
+          "modal"=>"contenido_4-modal",
+          "contenido-modal"=> "#contenido_4-modal"
         ),
       );
       foreach ($index_array as $movies) {
 
         echo '<article class="col col-sm-6 col-lg ">
-         <a href=' . $movies["link"] . ' target="_blank"><img src=' . $movies["img"] . ' alt="Cruella" class="movie-img"
+        <div class="modal fade" id='.$movies["modal"].' tabindex="-1" data-backdrop="static">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="col-sm-10 col-lg-11">
+                <h1 class="modal-title">'.$movies["tittle"].'</h1>
+              </div>
+              <div>
+                <button class="close" data-dismiss="modal">
+                  <span>&times;</span>
+                </button>
+              </div>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                <div class="row">
+                  <div class="col-sm-10 col-lg-12 modal-lg">
+                    '.$movies["iframe"].'
+                  </div>
+                  <div class="col-sm-12 col-lg-12 modal-text">
+                    <h2>Sinopsis</h2>
+                  </div>
+                  <div class="col-sm-12 col-lg-12 modal-text">
+                    <p><span>' . $movies["review"] . '
+                    </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                      <span>
+                        '.$movies["cast"].'
+                      </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                      <span>
+                        '.$movies["direction"].'
+                      </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                      <span>
+                        '.$movies["year"].'
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary">Comprar</button>
+                <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <a href=' . $movies["link"] . ' data-toggle="modal" data-target='.$movies["contenido-modal"].'><img src=' . $movies["img"] . ' alt="Cruella" class="movie-img"
              width="200" height="285"><br>
-             <a class="movie-tittle col-12" href=' . $movies["link"] . '> ' . $movies["tittle"] . ' </a>  
+             <a class="movie-tittle col-12" href=' . $movies["link"] . ' data-toggle="modal" data-target='.$movies["contenido-modal"].' >' . $movies["tittle"] . '   </a>  
          </a>
          <p class="col-col d-lg-none info2"><span>
          ' . $movies["review"] . '
@@ -152,6 +222,7 @@
            ' . $movies["year"] . '   
            </span>
          </p>
+         
        </article>';
       };
       ?>

@@ -19,7 +19,7 @@
 <body class="blackground">
   <header>
     <!-- fixed-top para que te siga el nav -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark background">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark background ">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="img/banner_more/cineOnline.png" alt="Logo" width="98" height="28">
@@ -74,16 +74,24 @@
     <div class="row center">
       <div class="col-6 col-sm-6 col-md-6 col-lg-3">
         <select name="select" id="buttom" class="buttom">
-          <option value="select">Selecciona una Película</option>
-          <option value="movie1">Cruella</option>
-          <option value="movie2">Raya y el último dragon</option>
+          <option value="select">Seleccioná un Cine</option>
+          <option value="movie1">Multiplex Lavalle</option>
+          <option value="movie2">Multiplex Belgrano</option>
+          <option value="movie2">Multiplex Canning</option>
+          <option value="movie2">Multiplex Cabildo</option>
+          <option value="movie2">Multiplex Palmas del Pilar</option>
         </select>
       </div>
       <!--Buscador 2-->
       <div class="col-6 col-sm-6 6col-md-6 col-lg-3">
         <select name="select2" id="buttom2" class="buttom">
-          <option value="category">Selecciona Categoria</option>
-          <option value="category">Clásicos</option>
+          <option value="category">Seleccioná Tipo de Sala</option>
+          <option value="category">2D</option>
+          <option value="category">2D Xtremo</option>
+          <option value="category">3D</option>
+          <option value="category">4D</option>
+          <option value="category">Comfort Plus 2D</option>
+          <option value="category">Sala Platinum</option>
         </select>
       </div>
       <!--Lupa-->
@@ -94,11 +102,73 @@
       </div>
     </div>
     <!--Cartelera-->
+    <div class="col-6 col-sm-6 6col-md-6 col-lg-3">
+      <h1 class="col-6 col-sm-6 6col-md-6 col-lg-3 tittles">ESTRENOS</h1>
+    </div>
     <section class="row center">
       <article class="col col-sm-6 col-lg ">
-        <a href="html/cruella.html" target="_blank"><img src="img/movies/cruella.jpg" alt="Cruella" class="movie-img"
-            width="200" height="285"><br>
-          <a class="movie-tittle col-12" href="html/cruella.html"> Cruella </a>
+    <!--Ventana Modal  -->
+        <div class="modal fade" id="contenido-modal" tabindex="-1" data-backdrop="static">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="col-sm-10 col-lg-11">
+                <h1 class="modal-title">Cruella</h1>
+              </div>
+              <div>
+                <button class="close" data-dismiss="modal">
+                  <span>&times;</span>
+                </button>
+              </div>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                <div class="row">
+                  <div class="col-sm-10 col-lg-12 modal-lg">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gmRKv7n2If8" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                  </div>
+                  <div class="col-sm-12 col-lg-12 modal-text">
+                    <h2>Sinopsis</h2>
+                  </div>
+                  <div class="col-sm-12 col-lg-12 modal-text">
+                    <p><span>Decidida a convertirse en una exitosa diseñadora de moda, una joven y creativa estafadora
+                      llamada Estella se asocia con un par de ladrones para sobrevivir en las calles de Londres. Sin embargo,
+                      cuando su talento para la moda llama la atención de la legendaria diseñadora, la Baronesa von Hellman,
+                      Estella cambia el rumbo de su vida hasta que una serie de acontecimientos la llevan a asumir su lado malvado
+                      y a convertirse en la estridente y vengativa Cruella.
+                    </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                      <span>
+                        REPARTO: Emma Stone, Emma Thompson, John McCrea.
+                      </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                      <span>
+                        DIRECCIÓN: Craig Gillespie.
+                      </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                      <span>
+                        Drama - 2021 - 1h 34min.
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary">Comprar</button>
+                <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="html/cruella.html" data-toggle="modal" data-target="#contenido-modal"><img src="img/movies/cruella.jpg" alt="Cruella" class="movie-img"
+            width="200" height="285" ><br>
+          <a class="movie-tittle col-12" href="html/cruella.html" data-toggle="modal" data-target="#contenido-modal"> Cruella </a>
         </a>
         <p class="col-col d-lg-none info2"><span>Decidida a convertirse en una exitosa diseñadora de moda, una joven y
             creativa estafadora llamada Estella se asocia con un par de ladrones para sobrevivir en las calles de
@@ -124,9 +194,68 @@
         </p>
       </article>
       <article class="col col-sm-6 col-lg">
-        <a href="html/mortal.html" target="_blank"><img src="img/movies/mortal_kombat.jpg" alt="Mortal Kombat"
+         <!--Ventana Modal  -->
+         <div class="modal fade" id="contenido_2-modal" tabindex="-1" data-backdrop="static">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="col-sm-10 col-lg-11">
+                <h1 class="modal-title">Mortal Kombat</h1>
+              </div>
+              <div>
+                <button class="close" data-dismiss="modal">
+                  <span>&times;</span>
+                </button>
+              </div>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                <div class="row">
+                  <div class="col-sm-10 col-lg-12 modal-lg">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-BQPKD7eozY" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                  </div>
+                  <div class="col-sm-12 col-lg-12 modal-text">
+                    <h2>Sinopsis</h2>
+                  </div>
+                  <div class="col-sm-12 col-lg-12 modal-text">
+                    <p><span>Cole Young, el luchador de MMA, acostumbrado a recibir palizas por
+                      dinero, desconoce su ascendencia, y tampoco sabe por qué el emperador Shang Tsung de Outworld ha enviado a
+                      su mejor guerrero, Sub-Zero, un Cryomancer sobrenatural, para dar caza a Cole. Ante esta situación, Cole
+                      teme por la seguridad de su familia y busca a Sonya Blade siguiendo las indicaciones de Jax, un comandante
+                      de las Fuerzas Especiales que tiene la misma extraña marca de dragón con la que nació Cole.
+                    </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                     <span>
+                      REPARTO: Lewis Tan, Jessica McNamee, Josh Lawson.
+                    </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                      <span>
+                        DIRECCIÓN: Simon McQuoid.
+                      </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                      <span>
+                        Acción/Aventura - 2021 - 1h 10min.
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary">Comprar</button>
+                <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="html/mortal.html" data-toggle="modal" data-target="#contenido_2-modal"><img src="img/movies/mortal_kombat.jpg" alt="Mortal Kombat"
             class="movie-img" width="200" height="285"><br>
-            <a class="movie-tittle col-12" href="html/mortal.html"> Mortal Kombat  </a>
+            <a class="movie-tittle col-12" href="html/mortal.html" data-toggle="modal" data-target="#contenido_2-modal"> Mortal Kombat  </a>
         </a>
         <p class="col-col d-lg-none info2"><span>Cole Young, el luchador de MMA, acostumbrado a recibir palizas por
             dinero, desconoce su ascendencia, y tampoco sabe por qué el emperador Shang Tsung de Outworld ha enviado a
@@ -152,9 +281,68 @@
         </p>
       </article>
       <article class="col col-sm-6 col-lg">
-        <a href="html/raya.html" target="_blank"><img src="img/movies/raya_and_the_last_dragon.jpg"
+        <!--Ventana Modal  -->
+        <div class="modal fade" id="contenido_3-modal" tabindex="-1" data-backdrop="static">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="col-sm-10 col-lg-11">
+                <h1 class="modal-title">Raya y el Último Dragón</h1>
+              </div>
+              <div>
+                <button class="close" data-dismiss="modal">
+                  <span>&times;</span>
+                </button>
+              </div>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                <div class="row">
+                  <div class="col-sm-10 col-lg-12 modal-lg">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1VIZ89FEjYI" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                  </div>
+                  <div class="col-sm-12 col-lg-12 modal-text">
+                    <h2>Sinopsis</h2>
+                  </div>
+                  <div class="col-sm-12 col-lg-12 modal-text">
+                    <p><span>En el fantástico mundo de Kumandra, humanos y dragones vivieron juntos
+                      en perfecta armonía. Sin embargo, cuando unas fuerzas del mal amenazaron el territorio, los dragones se
+                      sacrificaron para salvar a la humanidad. Cerca de 500 años después, esas mismas fuerzas malignas han
+                      regresado y Raya, una guerrera solitaria, tendrá que encontrar al último y legendario dragón para
+                      reconstruir un mundo destruido y volver a unir a su pueblo.
+                    </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                     <span>
+                      REPARTO: Awkwafina, Kelly Marie Tran, Sandra Oh.
+                    </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                      <span>
+                        DIRECCIÓN: Carlos López Estrada, Don Hall.
+                      </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                      <span>
+                        Aventura - 2021 - 1h 14min.
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary">Comprar</button>
+                <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="html/raya.html" data-toggle="modal" data-target="#contenido_3-modal"><img src="img/movies/raya_and_the_last_dragon.jpg"
             alt="raya y el último dragon" class="movie-img" width="200" height="285"><br>
-            <a class="movie-tittle col-12" href="html/raya.html"> Raya y el Último Dragón  </a>
+            <a class="movie-tittle col-12" href="html/raya.html" data-toggle="modal" data-target="#contenido_3-modal"> Raya y el Último Dragón  </a>
         </a>
         <p class="col-col d-lg-none info2"><span>En el fantástico mundo de Kumandra, humanos y dragones vivieron juntos
             en perfecta armonía. Sin embargo, cuando unas fuerzas del mal amenazaron el territorio, los dragones se
@@ -180,9 +368,65 @@
         </p>
       </article>
       <article class="col col-sm-6 col-lg">
-        <a href="html/conjuring.html" target="_blank"><img src="img/movies/the_conjuring.jpg" alt="el conjuro"
+        <!--Ventana Modal  -->
+        <div class="modal fade" id="contenido_4-modal" tabindex="-1" data-backdrop="static">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="col-sm-10 col-lg-11">
+                <h1 class="modal-title">El Conjuro 3</h1>
+              </div>
+              <div>
+                <button class="close" data-dismiss="modal">
+                  <span>&times;</span>
+                </button>
+              </div>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                <div class="row">
+                  <div class="col-sm-10 col-lg-12 modal-lg">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/S8nlMJfE6pc" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                  </div>
+                  <div class="col-sm-12 col-lg-12 modal-text">
+                    <h2>Sinopsis</h2>
+                  </div>
+                  <div class="col-sm-12 col-lg-12 modal-text">
+                    <p><span>Años 80. Ed y Lorraine Warren se enfrentan a un nuevo caso de la mano
+                      de un hombre, Arne Cheyne Johnson, acusado de un terrible asesinato tras haber sido poseído por un demonio.
+                    </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                     <span>
+                      REPARTO: Vera Farmiga, Patrick Wilson, Ruairi O'Connor.
+                    </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                      <span>
+                        DIRECCIÓN: Michael Chaves.
+                      </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                      <span>
+                        Terror - 2021 - 1h 12min.
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary">Comprar</button>
+                <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="html/conjuring.html" data-toggle="modal" data-target="#contenido_4-modal"><img src="img/movies/the_conjuring.jpg" alt="el conjuro"
             class="movie-img" width="200" height="285"><br>
-            <a class="movie-tittle col-12" href="html/conjuring.html"> El Conjuro 3 </a>
+            <a class="movie-tittle col-12" href="html/conjuring.html" data-toggle="modal" data-target="#contenido_4-modal"> El Conjuro 3 </a>
         </a>
         <p class="col-col d-lg-none info2"><span>Años 80. Ed y Lorraine Warren se enfrentan a un nuevo caso de la mano
             de un hombre, Arne Cheyne Johnson, acusado de un terrible asesinato tras haber sido poseído por un demonio.
@@ -205,7 +449,357 @@
         </p>
       </article>
     </section>
+
+  <!--Cartelera-->
+  <div class="col-6 col-sm-6 6col-md-6 col-lg-3">
+    <h1 class="col-6 col-sm-6 6col-md-6 col-lg-3 tittles">PRÓXIMAMENTE</h1>
   </div>
+  <section class="row center">
+    <article class="col col-sm-6 col-lg ">
+  <!--Ventana Modal  -->
+      <div class="modal fade" id="contenido-modal" tabindex="-1" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="col-sm-10 col-lg-11">
+              <h1 class="modal-title">Cruella</h1>
+            </div>
+            <div>
+              <button class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+              <div class="row">
+                <div class="col-sm-10 col-lg-12 modal-lg">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/gmRKv7n2If8" title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-12 col-lg-12 modal-text">
+                  <h2>Sinopsis</h2>
+                </div>
+                <div class="col-sm-12 col-lg-12 modal-text">
+                  <p><span>Decidida a convertirse en una exitosa diseñadora de moda, una joven y creativa estafadora
+                    llamada Estella se asocia con un par de ladrones para sobrevivir en las calles de Londres. Sin embargo,
+                    cuando su talento para la moda llama la atención de la legendaria diseñadora, la Baronesa von Hellman,
+                    Estella cambia el rumbo de su vida hasta que una serie de acontecimientos la llevan a asumir su lado malvado
+                    y a convertirse en la estridente y vengativa Cruella.
+                  </span>
+                  </p>
+                  <p class="col-sm-12 col-lg-12 modal-text">
+                    <span>
+                      REPARTO: Emma Stone, Emma Thompson, John McCrea.
+                    </span>
+                  </p>
+                  <p class="col-sm-12 col-lg-12 modal-text">
+                    <span>
+                      DIRECCIÓN: Craig Gillespie.
+                    </span>
+                  </p>
+                  <p class="col-sm-12 col-lg-12 modal-text">
+                    <span>
+                      Drama - 2021 - 1h 34min.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary">Comprar</button>
+              <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="html/cruella.html" data-toggle="modal" data-target="#contenido-modal"><img src="img/movies/cruella.jpg" alt="Cruella" class="movie-img"
+          width="200" height="285" ><br>
+        <a class="movie-tittle col-12" href="html/cruella.html" data-toggle="modal" data-target="#contenido-modal"> Cruella </a>
+      </a>
+      <p class="col-col d-lg-none info2"><span>Decidida a convertirse en una exitosa diseñadora de moda, una joven y
+          creativa estafadora llamada Estella se asocia con un par de ladrones para sobrevivir en las calles de
+          Londres. Sin embargo, cuando su talento para la moda llama la atención de la legendaria diseñadora, la
+          Baronesa von Hellman, Estella cambia el rumbo de su vida hasta que una serie de acontecimientos la llevan a
+          asumir su lado malvado y a convertirse en la estridente y vengativa Cruella.
+        </span>
+      </p>
+      <p class="col-col d-lg-none info2">
+        <span>
+          REPARTO: Emma Stone, Emma Thompson, John McCrea.
+        </span>
+      </p>
+      <p class="col-col d-lg-none info2">
+        <span>
+          DIRECCIÓN: Craig Gillespie.
+        </span>
+      </p>
+      <p class="col-col d-lg-none info2">
+        <span>
+          Drama - 2021 - 1h 34min.
+        </span>
+      </p>
+    </article>
+    <article class="col col-sm-6 col-lg">
+       <!--Ventana Modal  -->
+       <div class="modal fade" id="contenido_2-modal" tabindex="-1" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="col-sm-10 col-lg-11">
+              <h1 class="modal-title">Mortal Kombat</h1>
+            </div>
+            <div>
+              <button class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+              <div class="row">
+                <div class="col-sm-10 col-lg-12 modal-lg">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/-BQPKD7eozY" title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-12 col-lg-12 modal-text">
+                  <h2>Sinopsis</h2>
+                </div>
+                <div class="col-sm-12 col-lg-12 modal-text">
+                  <p><span>Cole Young, el luchador de MMA, acostumbrado a recibir palizas por
+                    dinero, desconoce su ascendencia, y tampoco sabe por qué el emperador Shang Tsung de Outworld ha enviado a
+                    su mejor guerrero, Sub-Zero, un Cryomancer sobrenatural, para dar caza a Cole. Ante esta situación, Cole
+                    teme por la seguridad de su familia y busca a Sonya Blade siguiendo las indicaciones de Jax, un comandante
+                    de las Fuerzas Especiales que tiene la misma extraña marca de dragón con la que nació Cole.
+                  </span>
+                  </p>
+                  <p class="col-sm-12 col-lg-12 modal-text">
+                   <span>
+                    REPARTO: Lewis Tan, Jessica McNamee, Josh Lawson.
+                  </span>
+                  </p>
+                  <p class="col-sm-12 col-lg-12 modal-text">
+                    <span>
+                      DIRECCIÓN: Simon McQuoid.
+                    </span>
+                  </p>
+                  <p class="col-sm-12 col-lg-12 modal-text">
+                    <span>
+                      Acción/Aventura - 2021 - 1h 10min.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary">Comprar</button>
+              <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="html/mortal.html" data-toggle="modal" data-target="#contenido_2-modal"><img src="img/movies/mortal_kombat.jpg" alt="Mortal Kombat"
+          class="movie-img" width="200" height="285"><br>
+          <a class="movie-tittle col-12" href="html/mortal.html" data-toggle="modal" data-target="#contenido_2-modal"> Mortal Kombat  </a>
+      </a>
+      <p class="col-col d-lg-none info2"><span>Cole Young, el luchador de MMA, acostumbrado a recibir palizas por
+          dinero, desconoce su ascendencia, y tampoco sabe por qué el emperador Shang Tsung de Outworld ha enviado a
+          su mejor guerrero, Sub-Zero, un Cryomancer sobrenatural, para dar caza a Cole. Ante esta situación, Cole
+          teme por la seguridad de su familia y busca a Sonya Blade siguiendo las indicaciones de Jax, un comandante
+          de las Fuerzas Especiales que tiene la misma extraña marca de dragón con la que nació Cole.
+        </span>
+      </p>
+      <p class="col-col d-lg-none info2">
+        <span>
+          REPARTO: Lewis Tan, Jessica McNamee, Josh Lawson.
+        </span>
+      </p>
+      <p class="col-col d-lg-none info2">
+        <span>
+          DIRECCIÓN: Simon McQuoid.
+        </span>
+      </p>
+      <p class="col-col d-lg-none info2">
+        <span>
+          Acción/Aventura - 2021 - 1h 10min.
+        </span>
+      </p>
+    </article>
+    <article class="col col-sm-6 col-lg">
+      <!--Ventana Modal  -->
+      <div class="modal fade" id="contenido_3-modal" tabindex="-1" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="col-sm-10 col-lg-11">
+              <h1 class="modal-title">Raya y el Último Dragón</h1>
+            </div>
+            <div>
+              <button class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+              <div class="row">
+                <div class="col-sm-10 col-lg-12 modal-lg">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/1VIZ89FEjYI" title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-12 col-lg-12 modal-text">
+                  <h2>Sinopsis</h2>
+                </div>
+                <div class="col-sm-12 col-lg-12 modal-text">
+                  <p><span>En el fantástico mundo de Kumandra, humanos y dragones vivieron juntos
+                    en perfecta armonía. Sin embargo, cuando unas fuerzas del mal amenazaron el territorio, los dragones se
+                    sacrificaron para salvar a la humanidad. Cerca de 500 años después, esas mismas fuerzas malignas han
+                    regresado y Raya, una guerrera solitaria, tendrá que encontrar al último y legendario dragón para
+                    reconstruir un mundo destruido y volver a unir a su pueblo.
+                  </span>
+                  </p>
+                  <p class="col-sm-12 col-lg-12 modal-text">
+                   <span>
+                    REPARTO: Awkwafina, Kelly Marie Tran, Sandra Oh.
+                  </span>
+                  </p>
+                  <p class="col-sm-12 col-lg-12 modal-text">
+                    <span>
+                      DIRECCIÓN: Carlos López Estrada, Don Hall.
+                    </span>
+                  </p>
+                  <p class="col-sm-12 col-lg-12 modal-text">
+                    <span>
+                      Aventura - 2021 - 1h 14min.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary">Comprar</button>
+              <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="html/raya.html" data-toggle="modal" data-target="#contenido_3-modal"><img src="img/movies/raya_and_the_last_dragon.jpg"
+          alt="raya y el último dragon" class="movie-img" width="200" height="285"><br>
+          <a class="movie-tittle col-12" href="html/raya.html" data-toggle="modal" data-target="#contenido_3-modal"> Raya y el Último Dragón  </a>
+      </a>
+      <p class="col-col d-lg-none info2"><span>En el fantástico mundo de Kumandra, humanos y dragones vivieron juntos
+          en perfecta armonía. Sin embargo, cuando unas fuerzas del mal amenazaron el territorio, los dragones se
+          sacrificaron para salvar a la humanidad. Cerca de 500 años después, esas mismas fuerzas malignas han
+          regresado y Raya, una guerrera solitaria, tendrá que encontrar al último y legendario dragón para
+          reconstruir un mundo destruido y volver a unir a su pueblo.
+        </span>
+      </p>
+      <p class="col-col d-lg-none info2">
+        <span>
+          REPARTO: Awkwafina, Kelly Marie Tran, Sandra Oh.
+        </span>
+      </p>
+      <p class="col-col d-lg-none info2">
+        <span>
+          DIRECCIÓN: Carlos López Estrada, Don Hall.
+        </span>
+      </p>
+      <p class="col-col d-lg-none info2">
+        <span>
+          Aventura - 2021 - 1h 14min.
+        </span>
+      </p>
+    </article>
+    <article class="col col-sm-6 col-lg">
+      <!--Ventana Modal  -->
+      <div class="modal fade" id="contenido_4-modal" tabindex="-1" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="col-sm-10 col-lg-11">
+              <h1 class="modal-title">El Conjuro 3</h1>
+            </div>
+            <div>
+              <button class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+              <div class="row">
+                <div class="col-sm-10 col-lg-12 modal-lg">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/S8nlMJfE6pc" title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-12 col-lg-12 modal-text">
+                  <h2>Sinopsis</h2>
+                </div>
+                <div class="col-sm-12 col-lg-12 modal-text">
+                  <p><span>Años 80. Ed y Lorraine Warren se enfrentan a un nuevo caso de la mano
+                    de un hombre, Arne Cheyne Johnson, acusado de un terrible asesinato tras haber sido poseído por un demonio.
+                  </span>
+                  </p>
+                  <p class="col-sm-12 col-lg-12 modal-text">
+                   <span>
+                    REPARTO: Vera Farmiga, Patrick Wilson, Ruairi O'Connor.
+                  </span>
+                  </p>
+                  <p class="col-sm-12 col-lg-12 modal-text">
+                    <span>
+                      DIRECCIÓN: Michael Chaves.
+                    </span>
+                  </p>
+                  <p class="col-sm-12 col-lg-12 modal-text">
+                    <span>
+                      Terror - 2021 - 1h 12min.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary">Comprar</button>
+              <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="html/conjuring.html" data-toggle="modal" data-target="#contenido_4-modal"><img src="img/movies/the_conjuring.jpg" alt="el conjuro"
+          class="movie-img" width="200" height="285"><br>
+          <a class="movie-tittle col-12" href="html/conjuring.html" data-toggle="modal" data-target="#contenido_4-modal"> El Conjuro 3 </a>
+      </a>
+      <p class="col-col d-lg-none info2"><span>Años 80. Ed y Lorraine Warren se enfrentan a un nuevo caso de la mano
+          de un hombre, Arne Cheyne Johnson, acusado de un terrible asesinato tras haber sido poseído por un demonio.
+        </span>
+      </p>
+      <p class="col-col d-lg-none info2">
+        <span>
+          REPARTO: Vera Farmiga, Patrick Wilson, Ruairi O'Connor.
+        </span>
+      </p>
+      <p class="col-col d-lg-none info2">
+        <span>
+          DIRECCIÓN: Michael Chaves.
+        </span>
+      </p>
+      <p class="col-col d-lg-none info2">
+        <span>
+          Terror - 2021 - 1h 12min.
+        </span>
+      </p>
+    </article>
+  </section>
+</div>
+  
   <!--Footer-->
   <footer class="background bg-dark bottom">
     <div class="container">

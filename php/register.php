@@ -98,7 +98,7 @@
               <span class="error"><?php echo $passwordErr;?></span>
               </div>
               <div>
-              <input type="submit" name="submit" id="submit">
+              <button type="submit" name="submit" id="submit">Enviar
             </div>
             <a href="login.php">¿Ya tienes una cuenta?</a><br>
             <a href="https://accounts.google.com/signin/v2/usernamerecovery?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">¿Olvidaste tu contraseña?</a>

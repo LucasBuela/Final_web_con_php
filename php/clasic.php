@@ -42,7 +42,12 @@
           "cast" => "REPARTO: Malcom McDowell, Patrick Magee, Adrianne Corri.",
           "direction" => "DIRECCIÓN: Stanley Kubrick.",
           "year" => "Crimen - 1971 - 2h 17min.",
-          "link" => "clock.php"
+          "link" => "clock.php",
+          "iframe"=>'<iframe width="560" height="315" src="https://www.youtube.com/embed/SPRzm8ibDQ8" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>',
+          "modal"=>"contenido_5-modal",
+          "contenido-modal"=> "#contenido_5-modal"
         ),
 
         array(
@@ -55,7 +60,12 @@
           "cast" => "REPARTO: Mark Hamill,Carrie Fisher,Harrison Ford.",
           "direction" => "DIRECCIÓN: Richard Marquand.",
           "year" => "Ciencia Ficción/Acción - 1983 - 2h 16min.",
-          "link" => "star.php"
+          "link" => "star.php",
+          "iframe"=>'<iframe width="560" height="315" src="https://www.youtube.com/embed/5UfA_aKBGMc" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>',
+          "modal"=>"contenido_6-modal",
+          "contenido-modal"=> "#contenido_6-modal"
         ),
 
         array(
@@ -69,7 +79,12 @@
           "cast" => "REPARTO: Kurt Russell, Wilford Brimley, Keith David.",
           "direction" => "DIRECCIÓN: John Carpenter.",
           "year" => "Terror - 1983 - 1h 5min.",
-          "link" => "thing.php"
+          "link" => "thing.php",
+          "iframe"=>'<iframe width="560" height="315" src="https://www.youtube.com/embed/ySvzHdtCiWE" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>',
+          "modal"=>"contenido_7-modal",
+          "contenido-modal"=> "#contenido_7-modal"
         ),
 
         array(
@@ -81,7 +96,12 @@
           "cast" => "REPARTO: Duane Jones, Judith O'Dea y Karl Hardman.",
           "direction" => "DIRECCIÓN: George A. Romero.",
           "year" => "Terror - 1970 - 1h 36min.",
-          "link" => "night.php"
+          "link" => "night.php",
+          "iframe"=>'<iframe width="560" height="315" src="https://www.youtube.com/embed/pd5a0gs-UCQ" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>',
+          "modal"=>"contenido_8-modal",
+          "contenido-modal"=> "#contenido_8-modal"
         ),
 
         array(
@@ -94,7 +114,12 @@
           "cast" => "REPARTO: Devon Sawa, Zackary Arthur, Alyvia Alyn Lind.",
           "direction" => "DIRECCIÓN: Don Mancini.",
           "year" => "Terror - 1988 - 1h 27min.",
-          "link" => "child.php"
+          "link" => "child.php",
+          "iframe"=>'<iframe width="560" height="315" src="https://www.youtube.com/embed/BhU0cCXYqw0" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>',
+          "modal"=>"contenido_9-modal",
+          "contenido-modal"=> "#contenido_9-modal"
         ),
 
         array(
@@ -107,7 +132,12 @@
           "cast" => "REPARTO: Al Pacino,Steven Bauer, Michelle Pfeiffer.",
           "direction" => "DIRECCIÓN: Brian De Palma.",
           "year" => "Drama/Crimen - 1983 - 1h 63min.",
-          "link" => "scarface.php"
+          "link" => "scarface.php",
+          "iframe"=>'<iframe width="560" height="315" src="https://www.youtube.com/embed/cv276Wg3e7I" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>',
+          "modal"=>"contenido_10-modal",
+          "contenido-modal"=> "#contenido_10-modal"
         ),
 
         array(
@@ -120,7 +150,12 @@
           "cast" => "REPARTO: Robert De Niro, Cybill Shepherd, Jodie Foster.",
           "direction" => "DIRECCIÓN: Martin Scorsese.",
           "year" => "Drama/Crimen - 1976 - 1h 13min.",
-          "link" => "taxi.php"
+          "link" => "taxi.php",
+          "iframe"=>'<iframe width="560" height="315" src="https://www.youtube.com/embed/44gB58YS53A" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>',
+          "modal"=>"contenido_11-modal",
+          "contenido-modal"=> "#contenido_11-modal"
         ),
 
         array(
@@ -133,34 +168,91 @@
           "cast" => "REPARTO: Jack Nicholson, Shelley Duvall, Danny Lloyd.",
           "direction" => "DIRECCIÓN: Stanley Kubrick.",
           "year" => "Drama/Terror - 1980 - 1h 46min.",
-          "link" => "shinning.php"
+          "link" => "shinning.php",
+          "iframe"=>'<iframe width="560" height="315" src="https://www.youtube.com/embed/5Cb3ik6zP2I" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>',
+          "modal"=>"contenido_12-modal",
+          "contenido-modal"=> "#contenido_12-modal"
         ),
 
       );
-      foreach ($movies_array as $movie) {
-        echo '<article class="col col-sm-6 col-md-4 col-lg">;        
-      <a href=' . $movie["link"] . '><img class="movie-img" src=' . $movie["img"] . ' alt="A CLOCKWORK ORANGE"
+      foreach ($movies_array as $movies) {
+        echo '<article class="col col-sm-6 col-md-4 col-lg">; 
+        <div class="modal fade" id='.$movies["modal"].' tabindex="-1" data-backdrop="static">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="col-sm-10 col-lg-11">
+                <h1 class="modal-title">'.$movies["tittle"].'</h1>
+              </div>
+              <div>
+                <button class="close" data-dismiss="modal">
+                  <span>&times;</span>
+                </button>
+              </div>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                <div class="row">
+                  <div class="col-sm-10 col-lg-12 modal-lg">
+                    '.$movies["iframe"].'
+                  </div>
+                  <div class="col-sm-12 col-lg-12 modal-text">
+                    <h2>Sinopsis</h2>
+                  </div>
+                  <div class="col-sm-12 col-lg-12 modal-text">
+                    <p><span>' . $movies["review"] . '
+                    </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                      <span>
+                        '.$movies["cast"].'
+                      </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                      <span>
+                        '.$movies["direction"].'
+                      </span>
+                    </p>
+                    <p class="col-sm-12 col-lg-12 modal-text">
+                      <span>
+                        '.$movies["year"].'
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary">Comprar</button>
+                <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>       
+      <a href=' . $movies["link"] . ' data-toggle="modal" data-target='.$movies["contenido-modal"].'><img class="movie-img" src=' . $movies["img"] . ' alt="A CLOCKWORK ORANGE"
             width="200" height="285"><br>
-            <a href=' . $movie["link"] . ' class="movie-tittle"> '.$movie["tittle"].' </a>
+            <a class="movie-tittle" href=' . $movies["link"] . ' data-toggle="modal" data-target='.$movies["contenido-modal"].' >' . $movies["tittle"] . '   </a>  
         </a>
         <p class="col-col d-lg-none info2">
           <span>
-          ' . $movie["review"] . '
+          ' . $movies["review"] . '
           </span>
         </p>
         <p class="col-col d-lg-none info2">
           <span>
-          ' . $movie["cast"] . '
+          ' . $movies["cast"] . '
           </span>
         </p>
         <p class="col-col d-lg-none info2">
           <span>
-          ' . $movie["direction"] . '
+          ' . $movies["direction"] . '
           </span>
         </p>
         <p class="col-col d-lg-none info2">
           <span>
-          ' . $movie["year"] . '
+          ' . $movies["year"] . '
           </span>
         </p>
       </article>';
