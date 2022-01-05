@@ -369,7 +369,7 @@ footer{
     /* padding: 100px 0px 0px 0px; */
     *background-image: url("../img/background-footer.svg");
     *background-size: cover;
-    background-color:rgb(62, 25, 175);
+    background-color:rgb(147, 147, 153);
     -webkit-mask-image:url("../img/background-footer.svg");
     mask-image: url("../img/background-footer.svg");
     mask-size: cover;
@@ -398,7 +398,7 @@ footer{
 }
 .box___footer h2{
     margin-bottom: 30px;
-    color: #e0dcdc;
+    color: #5e5959;
     font-weight: 700;
 }
 .box___footer a{
