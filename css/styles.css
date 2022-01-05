@@ -1,24 +1,69 @@
-/****Fondo****/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
 body{
     background-color: #0f0909;
-    padding: 0px;
-    margin: 0px;
+    font-size: 18px;
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-/****Contenedor****/
-.container{
-    justify-content: center;
-    position: relative;
-}
-.foot{
-        padding-bottom: 10.6rem;
+/* DIV 1 */
+.container-fluid{
+    width: 80%;
+    margin: auto;
 }
 
-/******Fondo del Nav y Footer******/
+ul{
+    list-style: none;
+}
+/* Nvegacion */
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+ 
+}
+.nav-main ul{
+    list-style: none;
+    display: flex;
+}
+.nav-main ul li{
+    padding: 15px;
+}
+.nav-main ul li a:hover{
+    border-bottom: 2px solid white;
+}
+.nav-main ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 0.2rem
+}
+.nav-main a img{
+    margin-bottom: 5px;
+}
+
+.nav-menu-right {
+    height: 40px;
+    /* color: rgba(255,255,255,.5); */
+} 
 .background{
-  background-image:url("../img/movies/background.jpg");
-  box-shadow: 10px -10px 30px black;
-  font-family: 'Roboto Condensed', sans-serif;
+    background-color: #0f0909;
+    box-shadow: 10px -10px 30px black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+/* .foot{
+    padding-bottom: 10.6rem;
+} */
+
+/* DIV 2 */
+.container-fluid_2{
+    width: 80%;
+    margin: auto;
 }
 
 /***Etiquetas p***/
@@ -42,7 +87,7 @@ body{
     text-shadow:
       0 0 2px #fff,
       0 0 5px #fff,
-      0 0 151px #fff;
+      0 0 5px #fff;
 }
 /*** Títulos ***/
 .tittle{
@@ -72,20 +117,21 @@ body{
 }
 
 /******Buscadores******/
-.buttom{
+.select{
     font-family: 'Roboto Condensed', sans-serif;
-    margin: 20px 0px 20px 0px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
+    font-size: 16px;
+    margin: 15px 0px 20px 0px;
+    padding: 10px 90px 10px 10px;
+    border-radius: 8px;
     background-color: #0f0909;
-    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 3px #fff;
     color: #fff;
     text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 151px #fff;
+      0 0 2px #fff,
+      0 0 2px #fff,
+      0 0 0px #fff;
 }
-.search{
+/* .search{
     color: white;
     width:50px;
     height:45px;
@@ -93,7 +139,8 @@ body{
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
     background-color: #0f0909; 
-}
+} */
+
 /****** Ventana modal******/
 .modal-header{
     background-image:url("../img/movies/background.jpg");
@@ -141,10 +188,14 @@ section article a:hover{
 .movie-img {
     width: 200px;
     height: 285px;;
-    box-shadow: 0 0 10px #fff;
-    margin-bottom: 4%;
+    box-shadow: 0 0 5px #fff;
+    margin-bottom: 1%;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 1.5rem;
+}
+/* distancia entre peliculas: */
+.pelis_dist{
+    margin: 0px 37px 0px 0px;
 }
 
 /****** Efecto hover en imagenes de las peliculas ******/
@@ -155,12 +206,11 @@ section article a:hover{
 .movie-tittle {
     font-size: 1.2em;
     font-family: 'Roboto Condensed', sans-serif;
-    text-align: center;
     color: #fff;
     text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 151px #fff;
+      0 0 5px #fff,
+      0 0 5px #fff,
+      0 0 10px #fff;
 }
 
 /*****Formulario*****/
