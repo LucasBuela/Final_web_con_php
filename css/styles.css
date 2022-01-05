@@ -130,8 +130,8 @@ ul{
     box-shadow: 0 0 3px #fff;
     color: #fff;
     text-shadow:
-      0 0 2px #fff,
-      0 0 2px #fff,
+      0 0 1px #fff,
+      0 0 1px #fff,
       0 0 0px #fff;
 }
 /* .search{
@@ -424,6 +424,14 @@ footer{
 
 .box_cobyright hr{
     background-color:#7a7a7a ;
+}
+.box_cobyright p a{
+    color: #ececec;
+}
+.box_cobyright p a:hover{
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: firebrick;
 }
 /* Redes Sociales */
 .social-media{
