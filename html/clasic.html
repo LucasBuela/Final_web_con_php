@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clásicos</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../css/estilos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clasicos</title>
+    <!-- BOOSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet" />
+    <!-- LOCAL CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
-
-<body class="blackground">
+<body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark background">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../img/banner_more/cineOnline.png" alt="Logo" width="98" height="28">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Cartelera</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="clasic.html">Clasicos<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="funcion.html">Mi Funcion</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Login</a>
-            </li>
-          </ul>
-        </div>
+    <!-- fixed-top para que te siga el nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark nav-main background fixed-top">
+      <a class="navbar-brand" href="../index.html">
+        <img src="/img/banner_more/cineOnline.png" alt="Logo" width="98" height="28" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">Peliculas<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a href="clasic.html" class="nav-link">Clasicos<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">Estrenos</a>
+          </li>
+          <li class="nav-item">
+            <a href="funcion.html" class="nav-link">Mi Funcion</a>
+          </li>
+        </ul>
+        <ul class="nav-menu-right">
+          <li class="nav-item col-1 d-none d-lg-block">
+            <a href="#" class="nav-link nav-btn nav-search">
+              <i class="fas fa-search"></i>
+              <!-- <i class="fas fa-search"></i> -->
+            </a>
+          </li>
+          <li>
+            <a href="html/login.html" class="nav-link">Login</a>
+          </li>
+        </ul>
       </div>
     </nav>
+    <div class="box_cobyright">
+      <hr />
+      <p>
+        Todos los derechos reservados - 2021-
+        <b>CineOnline.com.ar</b>
+      </p>
+    </div>
   </header>
-  <div class="container">
+  <div class="container scroll_rev">
     <div class="row center">
       <div class="col-12">
         <h1 class="tittle">Clásicos</h1>
@@ -71,52 +89,55 @@
             <div class="modal-content">
               <div class="modal-header">
                 <div class="col-sm-10 col-lg-11">
-                <h1 class="modal-title">A CLOCKWORK ORANGE</h1>
-              </div>
-              <div>
-                <button class="close" data-dismiss="modal">
-                  <span>&times;</span>
-                </button>
-              </div>
+                  <h1 class="modal-title">A CLOCKWORK ORANGE</h1>
+                </div>
+                <div>
+                  <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+                </div>
               </div>
               <div class="modal-body">
                 <div class="container">
-                <div class="row">
-                  <div class="col-sm-10 col-lg-12 modal-lg">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SPRzm8ibDQ8" title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                  </div>
-                  <div class="col-sm-12 col-lg-12 modal-text">
-                    <h2>Sinopsis</h2>
-                  </div>
-                  <div class="col-sm-12 col-lg-12 modal-text">
-                    <p><span>Estado de bienestar futurista, Alex (MalcolmMcDowell),un joven
-                      despiadado, duerme todo el día y pasa las noches vagando por la ciudad con sus droogs (amigos), atacando a
-                      personas inocentes en las calles y en sus hogares.
-                      Finalmente, capturado por la policía, Alex sufre una rehabilitación en forma de terapia de aversión tan
-                      brutal y horripilante como cualquiera de sus delitos.
-                    </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                     <span>
-                      REPARTO: Malcom McDowell, Patrick Magee, Adrianne Corri.
-                    </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                      <span>
-                        DIRECCIÓN: Stanley Kubrick.
-                      </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                      <span>
-                        Crimen - 1971 - 2h 17min.
-                      </span>
-                    </p>
+                  <div class="row">
+                    <div class="col-sm-10 col-lg-12 modal-lg">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/SPRzm8ibDQ8"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-12 col-lg-12 modal-text">
+                      <h2>Sinopsis</h2>
+                    </div>
+                    <div class="col-sm-12 col-lg-12 modal-text">
+                      <p><span>Estado de bienestar futurista, Alex (MalcolmMcDowell),un joven
+                          despiadado, duerme todo el día y pasa las noches vagando por la ciudad con sus droogs
+                          (amigos), atacando a
+                          personas inocentes en las calles y en sus hogares.
+                          Finalmente, capturado por la policía, Alex sufre una rehabilitación en forma de terapia de
+                          aversión tan
+                          brutal y horripilante como cualquiera de sus delitos.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          REPARTO: Malcom McDowell, Patrick Magee, Adrianne Corri.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          DIRECCIÓN: Stanley Kubrick.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          Crimen - 1971 - 2h 17min.
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
               <div class="modal-footer">
                 <button class="btn btn-primary">Comprar</button>
                 <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -124,9 +145,10 @@
             </div>
           </div>
         </div>
-        <a href="clock.html" data-toggle="modal" data-target="#contenido_5-modal"><img class="movie-img" src="../img/movies/clockwork.jpg" alt="A CLOCKWORK ORANGE"
-            width="200" height="285"><br>
-          <a href="clock.html" class="movie-tittle" data-toggle="modal" data-target="#contenido_5-modal"> A CLOCKWORK ORANGE </a>
+        <a href="clock.html" data-toggle="modal" data-target="#contenido_5-modal"><img class="movie-img"
+            src="../img/movies/clockwork.jpg" alt="A CLOCKWORK ORANGE" width="200" height="285"><br>
+          <a href="clock.html" class="movie-tittle" data-toggle="modal" data-target="#contenido_5-modal"> A CLOCKWORK
+            ORANGE </a>
         </a>
         <p class="col-col d-lg-none info2"><span>Estado de bienestar futurista, Alex (MalcolmMcDowell),un joven
             despiadado, duerme todo el día y pasa las noches vagando por la ciudad con sus droogs (amigos), atacando a
@@ -152,57 +174,60 @@
         </p>
       </article>
       <article class="col  col-sm-6 col-md-4 col-lg">
-         <!--Ventana Modal  -->
-         <div class="modal fade" id="contenido_6-modal" tabindex="-1" data-backdrop="static">
+        <!--Ventana Modal  -->
+        <div class="modal fade" id="contenido_6-modal" tabindex="-1" data-backdrop="static">
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
             <div class="modal-content">
               <div class="modal-header">
                 <div class="col-sm-10 col-lg-11">
-                <h1 class="modal-title">STAR WARS: RETURN OF THE JEDI EPISODE VI</h1>
-              </div>
-              <div>
-                <button class="close" data-dismiss="modal">
-                  <span>&times;</span>
-                </button>
-              </div>
+                  <h1 class="modal-title">STAR WARS: RETURN OF THE JEDI EPISODE VI</h1>
+                </div>
+                <div>
+                  <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+                </div>
               </div>
               <div class="modal-body">
                 <div class="container">
-                <div class="row">
-                  <div class="col-sm-10 col-lg-12 modal-lg">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5UfA_aKBGMc" title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                  </div>
-                  <div class="col-sm-12 col-lg-12 modal-text">
-                    <h2>Sinopsis</h2>
-                  </div>
-                  <div class="col-sm-12 col-lg-12 modal-text">
-                    <p><span>Luke Skywalker y la princesa Leia deben viajar a Tatooine para liberar
-                      a Han Solo. Para conseguirlo, deben infiltrarse en la peligrosa guarida de Jabba the Hutt, el gángster más
-                      temido de la galaxia. Una vez reunidos, el equipo recluta a tribus de Ewoks para combatir a las fuerzas
-                      imperiales en los bosques de la luna de Endor.
-                    </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                     <span>
-                      REPARTO: Mark Hamill,Carrie Fisher,Harrison Ford.
-                    </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                      <span>
-                        DIRECCIÓN: Richard Marquand.
-                      </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                      <span>
-                        Ciencia Ficción/Acción - 1983 - 2h 16min.
-                      </span>
-                    </p>
+                  <div class="row">
+                    <div class="col-sm-10 col-lg-12 modal-lg">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/5UfA_aKBGMc"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-12 col-lg-12 modal-text">
+                      <h2>Sinopsis</h2>
+                    </div>
+                    <div class="col-sm-12 col-lg-12 modal-text">
+                      <p><span>Luke Skywalker y la princesa Leia deben viajar a Tatooine para liberar
+                          a Han Solo. Para conseguirlo, deben infiltrarse en la peligrosa guarida de Jabba the Hutt, el
+                          gángster más
+                          temido de la galaxia. Una vez reunidos, el equipo recluta a tribus de Ewoks para combatir a
+                          las fuerzas
+                          imperiales en los bosques de la luna de Endor.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          REPARTO: Mark Hamill,Carrie Fisher,Harrison Ford.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          DIRECCIÓN: Richard Marquand.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          Ciencia Ficción/Acción - 1983 - 2h 16min.
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
               <div class="modal-footer">
                 <button class="btn btn-primary">Comprar</button>
                 <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -210,9 +235,11 @@
             </div>
           </div>
         </div>
-        <a href="star.html" data-toggle="modal" data-target="#contenido_6-modal"><img class="movie-img" src="../img/movies/star_wars.jpg"
-            alt="STAR WARS: RETURN OF THE JEDI EPISODE VI" width="200" height="285"><br>
-            <a href="star.html" class="movie-tittle" data-toggle="modal" data-target="#contenido_6-modal"> STAR WARS: RETURN OF THE JEDI EPISODE VI </a>
+        <a href="star.html" data-toggle="modal" data-target="#contenido_6-modal"><img class="movie-img"
+            src="../img/movies/star_wars.jpg" alt="STAR WARS: RETURN OF THE JEDI EPISODE VI" width="200"
+            height="285"><br>
+          <a href="star.html" class="movie-tittle" data-toggle="modal" data-target="#contenido_6-modal"> STAR WARS:
+            RETURN OF THE JEDI EPISODE VI </a>
         </a>
         <p class="col-col d-lg-none info2"><span>Luke Skywalker y la princesa Leia deben viajar a Tatooine para liberar
             a Han Solo. Para conseguirlo, deben infiltrarse en la peligrosa guarida de Jabba the Hutt, el gángster más
@@ -237,58 +264,62 @@
         </p>
       </article>
       <article class="col col-sm-6 col-md-4 col-lg">
-         <!--Ventana Modal  -->
-         <div class="modal fade" id="contenido_7-modal" tabindex="-1" data-backdrop="static">
+        <!--Ventana Modal  -->
+        <div class="modal fade" id="contenido_7-modal" tabindex="-1" data-backdrop="static">
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
             <div class="modal-content">
               <div class="modal-header">
                 <div class="col-sm-10 col-lg-11">
-                <h1 class="modal-title"> THE THING </h1>
-              </div>
-              <div>
-                <button class="close" data-dismiss="modal">
-                  <span>&times;</span>
-                </button>
-              </div>
+                  <h1 class="modal-title"> THE THING </h1>
+                </div>
+                <div>
+                  <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+                </div>
               </div>
               <div class="modal-body">
                 <div class="container">
-                <div class="row">
-                  <div class="col-sm-10 col-lg-12 modal-lg">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ySvzHdtCiWE" title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                  </div>
-                  <div class="col-sm-12 col-lg-12 modal-text">
-                    <h2>Sinopsis</h2>
-                  </div>
-                  <div class="col-sm-12 col-lg-12 modal-text">
-                    <p><span>En una estación experimental remota de la Antártida, un equipo de
-                      científicos de investigación estadounidenses ven cómo en su campamento base un helicóptero noruego dispara
-                      contra un perro de trineo. Cuando acogen al perro, éste ataca brutalmente tanto a los seres humanos como a
-                      los caninos del campamento, y descubren que la bestia, de origen desconocido, puede asumir la forma de sus
-                      víctimas.
-                    </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                     <span>
-                      REPARTO: Kurt Russell, Wilford Brimley, Keith David.
-                    </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                      <span>
-                        DIRECCIÓN: John Carpenter.
-                      </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                      <span>
-                        Terror - 1983 - 1h 5min.
-                      </span>
-                    </p>
+                  <div class="row">
+                    <div class="col-sm-10 col-lg-12 modal-lg">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/ySvzHdtCiWE"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-12 col-lg-12 modal-text">
+                      <h2>Sinopsis</h2>
+                    </div>
+                    <div class="col-sm-12 col-lg-12 modal-text">
+                      <p><span>En una estación experimental remota de la Antártida, un equipo de
+                          científicos de investigación estadounidenses ven cómo en su campamento base un helicóptero
+                          noruego dispara
+                          contra un perro de trineo. Cuando acogen al perro, éste ataca brutalmente tanto a los seres
+                          humanos como a
+                          los caninos del campamento, y descubren que la bestia, de origen desconocido, puede asumir la
+                          forma de sus
+                          víctimas.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          REPARTO: Kurt Russell, Wilford Brimley, Keith David.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          DIRECCIÓN: John Carpenter.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          Terror - 1983 - 1h 5min.
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
               <div class="modal-footer">
                 <button class="btn btn-primary">Comprar</button>
                 <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -296,9 +327,9 @@
             </div>
           </div>
         </div>
-        <a href="thing.html" data-toggle="modal" data-target="#contenido_7-modal"><img class="movie-img" src="../img/movies/the_thing.jpg" alt="THE THING" width="200"
-            height="285"><br>
-            <a href="thing.html" class="movie-tittle" data-toggle="modal" data-target="#contenido_7-modal"> THE THING </a>
+        <a href="thing.html" data-toggle="modal" data-target="#contenido_7-modal"><img class="movie-img"
+            src="../img/movies/the_thing.jpg" alt="THE THING" width="200" height="285"><br>
+          <a href="thing.html" class="movie-tittle" data-toggle="modal" data-target="#contenido_7-modal"> THE THING </a>
         </a>
         <p class="col-col d-lg-none info2"><span>En una estación experimental remota de la Antártida, un equipo de
             científicos de investigación estadounidenses ven cómo en su campamento base un helicóptero noruego dispara
@@ -329,50 +360,52 @@
             <div class="modal-content">
               <div class="modal-header">
                 <div class="col-sm-10 col-lg-11">
-                <h1 class="modal-title"> NIGHT OF THE LIVING DEAD  </h1>
-              </div>
-              <div>
-                <button class="close" data-dismiss="modal">
-                  <span>&times;</span>
-                </button>
-              </div>
+                  <h1 class="modal-title"> NIGHT OF THE LIVING DEAD </h1>
+                </div>
+                <div>
+                  <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+                </div>
               </div>
               <div class="modal-body">
                 <div class="container">
-                <div class="row">
-                  <div class="col-sm-10 col-lg-12 modal-lg">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pd5a0gs-UCQ" title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                  </div>
-                  <div class="col-sm-12 col-lg-12 modal-text">
-                    <h2>Sinopsis</h2>
-                  </div>
-                  <div class="col-sm-12 col-lg-12 modal-text">
-                    <p><span>En un cementerio de Pennsylvania, Barbara (Judith O'Dea) es atacada por
-                      un muerto viviente. Aterrorizada, la joven huye hacia una granja, donde también se ha refugiado Ben (Duane
-                      Jones). Juntos intentarán sobrevivir en el interior de esa aislada granja.
-                    </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                     <span>
-                      REPARTO: Duane Jones, Judith O'Dea y Karl Hardman.
-                    </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                      <span>
-                        DIRECCIÓN: George A. Romero.
-                      </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                      <span>
-                        Terror - 1970 - 1h 36min.
-                      </span>
-                    </p>
+                  <div class="row">
+                    <div class="col-sm-10 col-lg-12 modal-lg">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/pd5a0gs-UCQ"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-12 col-lg-12 modal-text">
+                      <h2>Sinopsis</h2>
+                    </div>
+                    <div class="col-sm-12 col-lg-12 modal-text">
+                      <p><span>En un cementerio de Pennsylvania, Barbara (Judith O'Dea) es atacada por
+                          un muerto viviente. Aterrorizada, la joven huye hacia una granja, donde también se ha
+                          refugiado Ben (Duane
+                          Jones). Juntos intentarán sobrevivir en el interior de esa aislada granja.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          REPARTO: Duane Jones, Judith O'Dea y Karl Hardman.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          DIRECCIÓN: George A. Romero.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          Terror - 1970 - 1h 36min.
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
               <div class="modal-footer">
                 <button class="btn btn-primary">Comprar</button>
                 <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -380,9 +413,10 @@
             </div>
           </div>
         </div>
-        <a href="night.html" data-toggle="modal" data-target="#contenido_8-modal"><img class="movie-img" src="../img/movies/tnotld.jpg" alt="NIGHT OF THE LIVING DEAD"
-            width="200" height="285"><br>
-            <a href="night.html" class="movie-tittle" data-toggle="modal" data-target="#contenido_8-modal"> NIGHT OF THE LIVING DEAD </a>
+        <a href="night.html" data-toggle="modal" data-target="#contenido_8-modal"><img class="movie-img"
+            src="../img/movies/tnotld.jpg" alt="NIGHT OF THE LIVING DEAD" width="200" height="285"><br>
+          <a href="night.html" class="movie-tittle" data-toggle="modal" data-target="#contenido_8-modal"> NIGHT OF THE
+            LIVING DEAD </a>
         </a>
         <p class="col-col d-lg-none info2"><span>En un cementerio de Pennsylvania, Barbara (Judith O'Dea) es atacada por
             un muerto viviente. Aterrorizada, la joven huye hacia una granja, donde también se ha refugiado Ben (Duane
@@ -406,67 +440,71 @@
         </p>
       </article>
       <article class="col col-sm-6 col-md-4 col-lg">
-                <!--Ventana Modal  -->
-                <div class="modal fade" id="contenido_9-modal" tabindex="-1" data-backdrop="static">
-                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <div class="col-sm-10 col-lg-11">
-                        <h1 class="modal-title"> CHILD´S PLAY </h1>
-                      </div>
-                      <div>
-                        <button class="close" data-dismiss="modal">
-                          <span>&times;</span>
-                        </button>
-                      </div>
-                      </div>
-                      <div class="modal-body">
-                        <div class="container">
-                        <div class="row">
-                          <div class="col-sm-10 col-lg-12 modal-lg">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/BhU0cCXYqw0" title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                          </div>
-                          <div class="col-sm-12 col-lg-12 modal-text">
-                            <h2>Sinopsis</h2>
-                          </div>
-                          <div class="col-sm-12 col-lg-12 modal-text">
-                            <p><span>Después de mudarse a una ciudad nueva, Karen le regala a su hijo Andy
-                              un muñeco que se convierte en el mejor amigo del niño. Lo que ellos desconocían es que el muñeco es un ser
-                              maligno que tiene vida propia. Andy deberá aliarse con otros niños vecinos para detener a esta diabólica
-                              criatura.
-                            </span>
-                            </p>
-                            <p class="col-sm-12 col-lg-12 modal-text">
-                             <span>
-                              REPARTO: Devon Sawa, Zackary Arthur, Alyvia Alyn Lind.
-                            </span>
-                            </p>
-                            <p class="col-sm-12 col-lg-12 modal-text">
-                              <span>
-                                DIRECCIÓN: Don Mancini.
-                              </span>
-                            </p>
-                            <p class="col-sm-12 col-lg-12 modal-text">
-                              <span>
-                                Terror - 1988 - 1h 27min.
-                              </span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+        <!--Ventana Modal  -->
+        <div class="modal fade" id="contenido_9-modal" tabindex="-1" data-backdrop="static">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="col-sm-10 col-lg-11">
+                  <h1 class="modal-title"> CHILD´S PLAY </h1>
+                </div>
+                <div>
+                  <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-10 col-lg-12 modal-lg">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/BhU0cCXYqw0"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                     </div>
-                      <div class="modal-footer">
-                        <button class="btn btn-primary">Comprar</button>
-                        <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                      </div>
+                    <div class="col-sm-12 col-lg-12 modal-text">
+                      <h2>Sinopsis</h2>
+                    </div>
+                    <div class="col-sm-12 col-lg-12 modal-text">
+                      <p><span>Después de mudarse a una ciudad nueva, Karen le regala a su hijo Andy
+                          un muñeco que se convierte en el mejor amigo del niño. Lo que ellos desconocían es que el
+                          muñeco es un ser
+                          maligno que tiene vida propia. Andy deberá aliarse con otros niños vecinos para detener a esta
+                          diabólica
+                          criatura.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          REPARTO: Devon Sawa, Zackary Arthur, Alyvia Alyn Lind.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          DIRECCIÓN: Don Mancini.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          Terror - 1988 - 1h 27min.
+                        </span>
+                      </p>
                     </div>
                   </div>
                 </div>
-        <a href="child.html" data-toggle="modal" data-target="#contenido_9-modal"><img class="movie-img" src="../img/movies/childs_play.jpg" alt="CHILD´S PLAY" width="200"
-            height="285"><br>
-            <a href="child.html" class="movie-tittle" data-toggle="modal" data-target="#contenido_9-modal"> CHILD´S PLAY </a>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary">Comprar</button>
+                <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="child.html" data-toggle="modal" data-target="#contenido_9-modal"><img class="movie-img"
+            src="../img/movies/childs_play.jpg" alt="CHILD´S PLAY" width="200" height="285"><br>
+          <a href="child.html" class="movie-tittle" data-toggle="modal" data-target="#contenido_9-modal"> CHILD´S PLAY
+          </a>
         </a>
         <p class="col-col d-lg-none info2"><span>Después de mudarse a una ciudad nueva, Karen le regala a su hijo Andy
             un muñeco que se convierte en el mejor amigo del niño. Lo que ellos desconocían es que el muñeco es un ser
@@ -491,67 +529,71 @@
         </p>
       </article>
       <article class="col col-sm-6 col-md-4 col-lg">
-                <!--Ventana Modal  -->
-                <div class="modal fade" id="contenido_10-modal" tabindex="-1" data-backdrop="static">
-                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <div class="col-sm-10 col-lg-11">
-                        <h1 class="modal-title"> SCARFACE </h1>
-                      </div>
-                      <div>
-                        <button class="close" data-dismiss="modal">
-                          <span>&times;</span>
-                        </button>
-                      </div>
-                      </div>
-                      <div class="modal-body">
-                        <div class="container">
-                        <div class="row">
-                          <div class="col-sm-10 col-lg-12 modal-lg">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/cv276Wg3e7I" title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                          </div>
-                          <div class="col-sm-12 col-lg-12 modal-text">
-                            <h2>Sinopsis</h2>
-                          </div>
-                          <div class="col-sm-12 col-lg-12 modal-text">
-                            <p><span>Tony Montana es un emigrante cubano frío e implacable que se instala en
-                              Miami con el propósito de convertirse en un gángster importante. Con la colaboración de su amigo Manny
-                              Rivera inicia una fulgurante carrera delictiva, con el objetivo de acceder a la cúpula de una organización
-                              de narcos.
-                            </span>
-                            </p>
-                            <p class="col-sm-12 col-lg-12 modal-text">
-                             <span>
-                              REPARTO: Al Pacino,Steven Bauer, Michelle Pfeiffer.
-                            </span>
-                            </p>
-                            <p class="col-sm-12 col-lg-12 modal-text">
-                              <span>
-                                DIRECCIÓN: Brian De Palma.
-                              </span>
-                            </p>
-                            <p class="col-sm-12 col-lg-12 modal-text">
-                              <span>
-                                Drama/Crimen - 1983 - 1h 63min.
-                              </span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+        <!--Ventana Modal  -->
+        <div class="modal fade" id="contenido_10-modal" tabindex="-1" data-backdrop="static">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="col-sm-10 col-lg-11">
+                  <h1 class="modal-title"> SCARFACE </h1>
+                </div>
+                <div>
+                  <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-10 col-lg-12 modal-lg">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/cv276Wg3e7I"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                     </div>
-                      <div class="modal-footer">
-                        <button class="btn btn-primary">Comprar</button>
-                        <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                      </div>
+                    <div class="col-sm-12 col-lg-12 modal-text">
+                      <h2>Sinopsis</h2>
+                    </div>
+                    <div class="col-sm-12 col-lg-12 modal-text">
+                      <p><span>Tony Montana es un emigrante cubano frío e implacable que se instala en
+                          Miami con el propósito de convertirse en un gángster importante. Con la colaboración de su
+                          amigo Manny
+                          Rivera inicia una fulgurante carrera delictiva, con el objetivo de acceder a la cúpula de una
+                          organización
+                          de narcos.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          REPARTO: Al Pacino,Steven Bauer, Michelle Pfeiffer.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          DIRECCIÓN: Brian De Palma.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          Drama/Crimen - 1983 - 1h 63min.
+                        </span>
+                      </p>
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary">Comprar</button>
+                <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <a href="scarface.html" data-toggle="modal" data-target="#contenido_10-modal">
           <img class="movie-img" src="../img/movies/scarface.jpg" alt="SCARFACE" width="200" height="285"><br>
-          <a href="scarface.html" class="movie-tittle" data-toggle="modal" data-target="#contenido_10-modal"> SCARFACE </a>
+          <a href="scarface.html" class="movie-tittle" data-toggle="modal" data-target="#contenido_10-modal"> SCARFACE
+          </a>
         </a>
         <p class="col-col d-lg-none info2"><span>Tony Montana es un emigrante cubano frío e implacable que se instala en
             Miami con el propósito de convertirse en un gángster importante. Con la colaboración de su amigo Manny
@@ -576,57 +618,60 @@
         </p>
       </article>
       <article class="col col-sm-6 col-md-4 col-lg">
-         <!--Ventana Modal  -->
-         <div class="modal fade" id="contenido_11-modal" tabindex="-1" data-backdrop="static">
+        <!--Ventana Modal  -->
+        <div class="modal fade" id="contenido_11-modal" tabindex="-1" data-backdrop="static">
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
             <div class="modal-content">
               <div class="modal-header">
                 <div class="col-sm-10 col-lg-11">
-                <h1 class="modal-title"> TAXI DRIVER </h1>
-              </div>
-              <div>
-                <button class="close" data-dismiss="modal">
-                  <span>&times;</span>
-                </button>
-              </div>
+                  <h1 class="modal-title"> TAXI DRIVER </h1>
+                </div>
+                <div>
+                  <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+                </div>
               </div>
               <div class="modal-body">
                 <div class="container">
-                <div class="row">
-                  <div class="col-sm-10 col-lg-12 modal-lg">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/44gB58YS53A" title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                  </div>
-                  <div class="col-sm-12 col-lg-12 modal-text">
-                    <h2>Sinopsis</h2>
-                  </div>
-                  <div class="col-sm-12 col-lg-12 modal-text">
-                    <p><span>Ambientada en la Nueva York de la década de 1970, poco después de que
-                      terminara la guerra de Vietnam, se centra en la vida de Travis Bickle, un excombatiente solitario e
-                      inestable que debido a su insomnio crónico comienza a trabajar como taxista, se incorpora a la turbia vida
-                      nocturna de la ciudad.
-                    </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                     <span>
-                      REPARTO: Robert De Niro, Cybill Shepherd, Jodie Foster.
-                    </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                      <span>
-                        DIRECCIÓN: Martin Scorsese.
-                      </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                      <span>
-                        Drama/Crimen - 1976 - 1h 13min.
-                      </span>
-                    </p>
+                  <div class="row">
+                    <div class="col-sm-10 col-lg-12 modal-lg">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/44gB58YS53A"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-12 col-lg-12 modal-text">
+                      <h2>Sinopsis</h2>
+                    </div>
+                    <div class="col-sm-12 col-lg-12 modal-text">
+                      <p><span>Ambientada en la Nueva York de la década de 1970, poco después de que
+                          terminara la guerra de Vietnam, se centra en la vida de Travis Bickle, un excombatiente
+                          solitario e
+                          inestable que debido a su insomnio crónico comienza a trabajar como taxista, se incorpora a la
+                          turbia vida
+                          nocturna de la ciudad.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          REPARTO: Robert De Niro, Cybill Shepherd, Jodie Foster.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          DIRECCIÓN: Martin Scorsese.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          Drama/Crimen - 1976 - 1h 13min.
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
               <div class="modal-footer">
                 <button class="btn btn-primary">Comprar</button>
                 <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -636,7 +681,8 @@
         </div>
         <a href="taxi.html" data-toggle="modal" data-target="#contenido_11-modal">
           <img class="movie-img" src="../img/movies/taxi_driver.jpg" alt="TAXI DRIVER" width="200" height="285"><br>
-          <a href="taxi.html" class="movie-tittle" data-toggle="modal" data-target="#contenido_11-modal"> TAXI DRIVER </a>
+          <a href="taxi.html" class="movie-tittle" data-toggle="modal" data-target="#contenido_11-modal"> TAXI DRIVER
+          </a>
         </a>
         <p class="col-col d-lg-none info2"><span>Ambientada en la Nueva York de la década de 1970, poco después de que
             terminara la guerra de Vietnam, se centra en la vida de Travis Bickle, un excombatiente solitario e
@@ -667,51 +713,54 @@
             <div class="modal-content">
               <div class="modal-header">
                 <div class="col-sm-10 col-lg-11">
-                <h1 class="modal-title"> THE SHINING </h1>
-              </div>
-              <div>
-                <button class="close" data-dismiss="modal">
-                  <span>&times;</span>
-                </button>
-              </div>
+                  <h1 class="modal-title"> THE SHINING </h1>
+                </div>
+                <div>
+                  <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+                </div>
               </div>
               <div class="modal-body">
                 <div class="container">
-                <div class="row">
-                  <div class="col-sm-10 col-lg-12 modal-lg">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5Cb3ik6zP2I" title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                  </div>
-                  <div class="col-sm-12 col-lg-12 modal-text">
-                    <h2>Sinopsis</h2>
-                  </div>
-                  <div class="col-sm-12 col-lg-12 modal-text">
-                    <p><span>Jack Torrance(Jack Nicholson) se traslada junto a su mujer y a su
-                      introvertido hijo Danny a un impresionante hotel ubicado en Colorado del que ha de encargarse los
-                      larguísimos y solitarios meses de invierno. En el hotel comienzan a sucederse fenómenos paranormales que
-                      provocarán serios trastornos en la mente de Jack.
-                    </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                     <span>
-                      REPARTO: Jack Nicholson, Shelley Duvall, Danny Lloyd.
-                    </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                      <span>
-                        DIRECCIÓN: Stanley Kubrick.
-                      </span>
-                    </p>
-                    <p class="col-sm-12 col-lg-12 modal-text">
-                      <span>
-                        Drama/Terror - 1980 - 1h 46min.
-                      </span>
-                    </p>
+                  <div class="row">
+                    <div class="col-sm-10 col-lg-12 modal-lg">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/5Cb3ik6zP2I"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-12 col-lg-12 modal-text">
+                      <h2>Sinopsis</h2>
+                    </div>
+                    <div class="col-sm-12 col-lg-12 modal-text">
+                      <p><span>Jack Torrance(Jack Nicholson) se traslada junto a su mujer y a su
+                          introvertido hijo Danny a un impresionante hotel ubicado en Colorado del que ha de encargarse
+                          los
+                          larguísimos y solitarios meses de invierno. En el hotel comienzan a sucederse fenómenos
+                          paranormales que
+                          provocarán serios trastornos en la mente de Jack.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          REPARTO: Jack Nicholson, Shelley Duvall, Danny Lloyd.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          DIRECCIÓN: Stanley Kubrick.
+                        </span>
+                      </p>
+                      <p class="col-sm-12 col-lg-12 modal-text">
+                        <span>
+                          Drama/Terror - 1980 - 1h 46min.
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
               <div class="modal-footer">
                 <button class="btn btn-primary">Comprar</button>
                 <button class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -721,7 +770,8 @@
         </div>
         <a href="shinning.html" data-toggle="modal" data-target="#contenido_12-modal">
           <img class="movie-img" src="../img/movies/the_shinning.jpg" alt="THE SHINING" width="200" height="285"><br>
-          <a href="shinning.html" class="movie-tittle" data-toggle="modal" data-target="#contenido_12-modal"> THE SHINING </a>
+          <a href="shinning.html" class="movie-tittle" data-toggle="modal" data-target="#contenido_12-modal"> THE
+            SHINING </a>
         </a>
         <p class="col-col d-lg-none info2"><span>Jack Torrance(Jack Nicholson) se traslada junto a su mujer y a su
             introvertido hijo Danny a un impresionante hotel ubicado en Colorado del que ha de encargarse los
@@ -747,44 +797,68 @@
       </article>
     </section>
   </div>
-  <!--Footer-->
-  <footer class="background bg-dark bottom">
-    <div class="container">
-      <div class="row center">
-        <div class="col-8 col-md-9 col-lg-10 footer">
-          <p>Todos los derechos reservados CineOnline.com.ar</p>
-        </div>
-        <div class="col-4 col-md-3 col-lg-2 social-media">
-          <a href="https://www.facebook.com/" target="_blank">
-            <img src="
-                    ../img/banner_more/facebook.png" alt="facebook-icon" class="social-media" width="512" height="512">
-          </a>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img src="
-                    ../img/banner_more/instagram.png" alt="instagram-icon" class="social-media" width="512"
-              height="512">
-          </a>
-          <a href="https://www.youtube.com/" target="_blank">
-            <img src="
-                    ../img/banner_more/youtube.png" alt="youtube-icon" class="social-media" width="512" height="512">
-          </a>
-          <a href="https://twitter.com/" target="_blank">
-            <img src="
-                    ../img/banner_more/twitter.png" alt="twitter-icon" class="social-media" width="512" height="512">
-          </a>
-        </div>
+ <!--Footer-->
+ <footer class="footer">
+  <div class="container_footer">
+    <div class="box__footer">
+      <div class="logo">
+        <img src="../img/banner_more/cineOnline.png" alt="CineOnline Logo" />
+      </div>
+      <div class="terminos">
+        <br />
+        <p>CineOnline es un proyecto de página web publicada por</p>
+        <span>Lucas Gustavo Buela</span>
       </div>
     </div>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    <div class="box___footer">
+      <h2>Complejos</h2>
+      <a href="">Multiplex Lavalle Lavalle 780 C.A.B.A. </a>
+      <a href="">Multiplex Canning Formosa 653 Canning</a>
+      <a href="">Multiplex Cabildo Av. Cabildo 2829 C.A.B.A. </a>
+      <a href=""> Multiplex Palmas del Pilar Las Magnolias 754 </a>
+      <a href="">Multiplex Belgrano Vuelta de Obligado 2199 C.A.B.A.</a>
+    </div>
+
+    <div class="box___footer">
+      <h2>Rede Sociales</h2>
+      <a href="https://www.linkedin.com/in/lucas-buela-6660b5197/" target="_blank">
+        <img src="../img/banner_more/facebook.png" alt="facebook-icon" class="social-media" e width="512" height="512" />
+        <span>LinkedIn</span></a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="../img/banner_more/instagram.png" alt="instagram-icon" class="social-media" width="512" height="512" />
+        <span>Instagram</span></a>
+      <a href="https://github.com/LucasBuela/LucasBuela" target="_blank">
+        <img src="../img/banner_more/youtube.png" alt="youtube-icon" class="social-media" width="512" height="512" />
+        <span>Github</span></a>
+      <a href="https://twitter.com/" target="_blank">
+        <img src="../img/banner_more/twitter.png" alt="twitter-icon" class="social-media" width="512" height="512" />
+        <span>Twitter</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="box_cobyright">
+    <hr />
+    <p>
+      Todos los derechos reservados - 2021- ©
+      <a href="#">CineOnline.com.ar</a>
+    </p>
+  </div>
+</footer>
+
+ <!-- Scroll Reveal CDN -->
+ <script src="https://unpkg.com/scrollreveal"></script>
+ <!-- JavaScript  -->
+ <script src="../js/main.js"></script>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+   crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+   crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+   crossorigin="anonymous"></script>
 </body>
 
 </html>

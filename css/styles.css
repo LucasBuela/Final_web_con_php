@@ -323,6 +323,9 @@ section form a:hover {
   width: 60px;
   height: 60px;
 }
+.center_2{
+  text-align: center;
+}
 
 /*** Información elegir pelicula/escanear/mirar ***/
 .info {
