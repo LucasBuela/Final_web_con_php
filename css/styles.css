@@ -201,9 +201,9 @@ img.images {
   height: 290px;
 }
 .informacion {
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   font-family: "Bebas Neue", cursive;
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
   text-transform: uppercase;
   color: #888888;
@@ -225,7 +225,7 @@ img.images {
 }
 div.movie-img:hover div.images {
   transition: height 0.4s;
-  height: 257px;
+  height: 260px;
 }
 div.movie-img:hover div.informacion {
   transition: height 0.4s;
