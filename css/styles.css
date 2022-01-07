@@ -52,24 +52,21 @@ ul {
 .nav-main ul li a:hover {
   border-radius: 5px 5px 5px 5px;
   transform: scale(1.1);
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .nav-main a img {
   margin-bottom: 5px;
 }
 
 .nav-menu-right {
-    height: 40px;
-    color: rgba(255,255,255,.5);
+  height: 40px;
+  color: rgba(255, 255, 255, 0.5);
 }
 .background {
   background-color: #0f0909;
   box-shadow: 10px -10px 30px black;
   font-family: "Roboto Condensed", sans-serif;
 }
-/* .foot{
-    padding-bottom: 10.6rem;
-} */
 
 /* DIV 2 */
 .container-fluid_2 {
@@ -89,10 +86,10 @@ ul {
   max-width: 1200px;
   margin: auto;
   text-align: center;
-  padding: 0px 40px;
+  /* padding: 0px 40px; */
 }
 .tittles {
-  font-family: "Bebas Neue", cursive;
+  font-family: "GothamHTFUltra";
   /* font-family: 'Roboto Condensed', sans-serif; */
   margin: 20px 0px 20px 0px;
   padding: 10px 10px 10px 10px;
@@ -177,6 +174,11 @@ section article a:hover {
   transition: color 0.3s ease;
   color: firebrick;
 }
+/* distancia entre peliculas: */
+.pelis_dist {
+  margin: 0px 12px 0px 10px;
+}
+/* ***** Hover "Estreno,prox,peliculas************** */
 .movie-img {
   width: 200px;
   height: 285px;
@@ -184,13 +186,33 @@ section article a:hover {
   margin-bottom: 1%;
   cursor: pointer;
   border-radius: 1.5rem;
+  overflow: hidden;
 }
-/* distancia entre peliculas: */
-.pelis_dist {
-  margin: 0px 12px 0px 10px;
+.images {
+  width: 200px;
+  height: 290px;
+  overflow: hidden;
+  transition: height 0.4s;
 }
 
-/****** Efecto hover en imagenes de las peliculas ******/
+img.images {
+  display: block;
+  width: 200px;
+  height: 290px;
+}
+.informacion {
+  margin-bottom: 2px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #888888;
+  background-color: rgb(7, 7, 7);
+  width: 200px;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.4s;
+}
 .movie-img:hover {
   transition: all ease-in-out 0.5s;
   transform: translateY(-3%);
@@ -200,6 +222,15 @@ section article a:hover {
   font-family: "Roboto Condensed", sans-serif;
   color: #fff;
   text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #fff;
+}
+div.movie-img:hover div.images {
+  transition: height 0.4s;
+  height: 257px;
+}
+div.movie-img:hover div.informacion {
+  transition: height 0.4s;
+  transform: translateY(-3%);
+  height: 30px;
 }
 
 /*****Formulario*****/
@@ -333,7 +364,7 @@ section form a:hover {
   width: 60px;
   height: 60px;
 }
-.center_2{
+.center_2 {
   text-align: center;
 }
 
