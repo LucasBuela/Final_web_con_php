@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/74b45bb5d5.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" /> -->
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,6 +27,7 @@
 <body class="container-fluid">
   <header>
     <!-- fixed-top para que te siga el nav -->
+    <!-- sticky-top -->
     <nav class="navbar navbar-expand-lg navbar-dark nav-main background fixed-top">
       <a class="navbar-brand" href="index.html">
         <img src="img/banner_more/cineOnline.png" alt="Logo" width="98" height="28" />
@@ -184,8 +186,8 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-primary">Comprar</button>
-                <button class="btn btn-secondary" data-dismiss="modal">
+                <button  id="submit">Comprar</button>
+                <button  id="submit" data-dismiss="modal">
                   Cerrar
                 </button>
               </div>
@@ -284,8 +286,8 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-primary">Comprar</button>
-                <button class="btn btn-secondary" data-dismiss="modal">
+                <button  id="submit">Comprar</button>
+                <button  id="submit" data-dismiss="modal">
                   Cerrar
                 </button>
               </div>
@@ -386,8 +388,8 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-primary">Comprar</button>
-                <button class="btn btn-secondary" data-dismiss="modal">
+                <button  id="submit">Comprar</button>
+                <button  id="submit" data-dismiss="modal">
                   Cerrar
                 </button>
               </div>
@@ -482,8 +484,8 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-primary">Comprar</button>
-                <button class="btn btn-secondary" data-dismiss="modal">
+                <button  id="submit">Comprar</button>
+                <button  id="submit" data-dismiss="modal">
                   Cerrar
                 </button>
               </div>
@@ -574,8 +576,8 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-primary">Comprar</button>
-                <button class="btn btn-secondary" data-dismiss="modal">
+                <button  id="submit">Comprar</button>
+                <button  id="submit" data-dismiss="modal">
                   Cerrar
                 </button>
               </div>
@@ -1616,6 +1618,11 @@
     <div class="box_cobyright">
       <hr />
     </div>
+  </div>
+  
+  <!--Button Up  -->
+  <div id="button-up">
+    <i class="fas fa-chevron-up"></i>
   </div>
   <!--Footer-->
   <footer class="footer">
