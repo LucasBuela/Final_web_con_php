@@ -22,6 +22,7 @@
 <?php
     require "header.php";
   ?>
+  <!-- Agregar php en todo el contenido interno de cruella -->
   <div class="container foot">
     <div class="row center">
       <div class=" col-12">
